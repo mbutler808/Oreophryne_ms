@@ -1,0 +1,36 @@
+# Cut Aphantophryne text 1 {#sec-cut1}
+
+Recent molecular phylogenetic reconstruction of Asterophryinae has established with strong support that _Oreophryne_ sensu lato is in fact polyphyletic, and suggest that members of the genus _Aphantophryne_ may be contained within _Oreophryne_ sensu lato [@Hill:2022;@Hill:2023]. _Aphantophryne_ is a small, fossorial genus limited to high elevation that was first described by (@Fry:1917). They lack clavicles, and have never been hypothesized as members of Oreophryne on the basis of morphology.
+
+
+In addition, the hypothesis that Aphatophryne is contained within one of these clades requires confirmation. ... several species of Aphantophryne to resolve the genus Oreophryne, ..., to confirm the synonymization of Aphantophryne
+
+# Cut Aphantophryne text 2 {#sec-cut2}
+[@Fry:1917] described the genus Aphantophryne to accommodate Aphantophryne pansa, a species that he named from six specimens from the summit region of Mt. Scratchley in the Owen Stanley Mountains of what is today Papua New Guinea, that lacked a sternum, procoracoid cartilage, clavicles and digital discs. Zweifel (1956) noted on the basis of additional material that Aphantophryne pansa actually possessed a sternal plate and placed it within the genus Cophixalus, noting, however, that it differed from other species of Cophixalus in having a squat, “toad-like” form and lacked digital discs. Zweifel and Allison (1982) in describing a new ground-dwelling species of Cophixalus, C. sphagnicola, from the summit of Mt Kaindi, near Wau at the western tip of the Owen Stanley Range, re-examined the validity of Aphantophryne and left it synonymized with Cophixalus. In 1989, Zweifel and Parker described two new species of ground-dwelling montane frogs from specimens that they collected in 1987 from the central Owen Stanley Mountains, and noted that these taxa both had a squat-like appearance similar to Cophixalus pansus and also, like that species, had an overlooked skeletal feature, which differentiated all three taxa from Cophixalus and related genera in possessing seven instead of eight presacral vertebrae. Primarily on the basis of this feature, Zweifel and Parker (1989) resurrected the genus Aphantophryne, and re-diagnosed it as differing from Cophixalus and related genera in possessing seven presacral vertebrae and in addition lacking clavicles and procoracoid cartilage and having short hind legs and digits with rounded tips.
+
+# Cut from methods
+
+We add a second taxon of _Aphantophryne_, _A. sabini_ also in a molecular phylogeny for the first time, as well as additional samples of _Aphantophryne pansa_ from a new site.
+
+# Cut from discussion
+
+One might hope that this trait is at least useful for limiting specimens to these two genera, however, our phylogenetic results clearly show that this trait may lead to the exclusion of non-arboreal taxa (i.e., the fossorial "Aphantophryne").”
+
+Fossorial, high-elevation Auparoparo (formerly Aphantophpryne) lack differentiated digit pads altogether (@Green:1986).
+
+The phylogenetic overlay on the geographic distribution shows that the earliest split of Oreophryne ~18MYA led to subclades with a primarily westward distribution and another with a more easterly distribution. The westward subclade diversified along the mainland of New Guinea (the north coast of New Guinea, the Central Cordillera), and expanded to the the (~12 MYA) North Maluku Islands and the Southern Philippines (~5MYA). The eastward subclade overlaps along the North coast of New Guinea and the Central Cordillera, but extends throughout Southeast extent of the island to both near offshore islands (Fergusson and Normanby of the DʻEntrecasteux Islands), as well as the distant Rossel Island of the Louisiade.
+
+The inclusion of Aphantophryne expands the range of Auparoparo north-westward to the high central mountain cordillera of Southeastern Papua New Guinea (~10 MYA, Figure 2, phylomap).
+
+Furthermore, species geographic ranges were suggestive of segregation by character state (@Kraus:2013).
+
+
+### How much ecomorph evolution is happening in these groups?
+
+_Oreophryne_ sensu lato are generally recognized as low to mid-elevation species, with only a few known from high elevation above ~2800 m (@Zweifel:2005 characterized six species). These high-elevation Oreophryne are described as terrestrial, living in meadows or alpine grass and secretive, with shorter limbs, reduced finger and toe pads and smaller hands, and superficially resemble Aphantophryne, but possesses the cartilaginous procoracoid reaching the scapula characteristic of Oreophryne (@Zweifel:2005). The discovery of a high-elevation fossorial morphotype of Auparoparo, expands our notion of what these clades may possibly look like. We may soon discover that Oreophryne and Auparoparo are more phenotypically, ecologically, and geographically diverse than previously appreciated.
+
+Oreophryne sensu lato are known from Western New Guinea, Sulawesi, the Lesser Sunda Islands, and other areas?? and there are also many species which are undescribed or yet to be sampled.
+
+
+Our study illustrates why the recent proposal of (@Dubois:2021) synonymizing all Asterophryinae genera into one large genus-level clade would only serve to confuse our understanding of Pacific biodiversity. Although they did not find phylogenetic structure at the generic level, it is important to point out that these results were based on a supermatrix approach and are in conflict with all other recent molecular studies (@Koehler:2008; @deSa:2012; @Peloso:2016; @Rivera:2017; @Tu:2018; @Hill:2022; @Hill:2023) that found substantial phylogenetic structure among the recognized genera. Future studies must remain vigilant with regard to data quality and carefully interrogate data obtained from public databases, as it is well-known that errors in taxonomic identity of the sample are often left uncorrected, among other sources of potential error. Although it is commonly assumed that good data will swamp out the bad, in our experience this is not necessarily true. @Hill:2022 found that nodal support was sensitive to completion of the data matrix and rigorous scrutiny of data quality (i.e., strong data cleaning). These issues will only be amplified in sparse supermatrix approaches where only few data are available for many inferences, and may explain the discrepancy between studies.
+Taxonomists have been working for over a hundred years to clarify the structure of this group, and the growing body of molecular phylogenetic studies has thus far confirmed the monophyly of 16 generic-level taxa. 

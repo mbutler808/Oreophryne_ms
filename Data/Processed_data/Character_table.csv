@@ -1,0 +1,31 @@
+genus,species,reference,toe_length,toe_webbing,tympanum,pec_type,call_type,f/t avg (this study)
+Oreophryne A,anamiatoi,Kraus_Allison_2009,5>3,none,1/4 eye diameter,Cartilaginous,Chuckle or cackle,1.216223478
+Oreophryne A,aurora,Kraus_2016,5>3,well webbed,1/4 eye diameter,Ligamentous,Harsh croaks,
+Oreophryne A,biroi,Zweifel_2003,5~3,well webbed,1/4 eye diameter,Ligamentous,Rattle,1.106785792
+Oreophryne A,brachypus,Zweifel_2003,5>3,well webbed,1/4 eye diameter,Ligamentous,Long squeak,1.079561714
+Oreophryne A,cameroni,Kraus_2013,5>3,basally webbed,1/4 eye diameter,Cartilaginous,Peeping,
+Oreophryne A,geislerorum,Zweifel_2003,5>3,well webbed,1/3 eye diameter,Ligamentous,Rattle,
+Oreophryne A,inornata,Kraus_2016,5>3,basally webbed,1/4 eye diameter,Ligamentous,Honk,0.9815599935
+Oreophryne A,lemur,Kraus_2016,5>3,basally webbed,1/4 eye diameter,Ligamentous,Honk,
+Oreophryne A,loriae,Kraus_2016,5>3,well webbed,1/3 eye diameter,Ligamentous,Honk,
+Oreophryne A,notata,Zweifel_2003,5>3,none,1/4 eye diameter,Cartilaginous,Peeping,
+Oreophryne A,parkeri,"Kraus_2013, Zweifel_2003",5>3,well webbed,1/3 eye diameter,Ligamentous,Peeping,
+Oreophryne A,parkopanorum,Kraus_2013,5<3,none,1/4 eye diameter,Cartilaginous,no info,
+Oreophryne A,frontifasciata,"Horst_1883, Brongersma 1948",5>3,basally webbed,1/2 eye diameter (brongersma),Cartilaginous (Brongersma),no info,toes slightly smaller
+Oreophryne A,graminis,Gunther_Richards_2012,5>3,none,1/3 eye diameter ,Cartilaginous,Peeping,approx equal
+Oreophryne A,senckenbergiana,"Peters_Doria_1878, Parker 1934",5~3,basally webbed,1/3 eye diameter,cartilaginous?,no info,toes slightly smaller
+Oreophryne A,variabilis,Boulenger_1896,no info,none,>2/3 eye diameter,Cartilaginous,no info,toes much smaller
+Oreophryne A,anulata,Stejneger_1908,5>3,none,1/2 eye diameter,no info,no info,toes slightly smaller
+Oreophryne A,philosylleptoris,Kraus_2016,5>3,well webbed,1/3 eye diameter,Ligamentous,Honk,1.037032136
+Oreophryne B,equus,Kraus_2016,5~3,basally webbed,1/4 eye diameter,Ligamentous,Whinny,1.331130996
+Oreophryne B,ezra,Kraus_Allison_2009,5>3,basally webbed,1/4 eye diameter,Ligamentous,Chattering,
+Oreophryne B,nana,"Brown and Alcala, 1967",5~3,none,1/2 eye diameter,Cartilaginous,no info,approx equal
+Oreophryne B,brunnea,Kraus_2017,5~3,basally webbed,1/3 eye diameter,Ligamentous,Rattle,toes smaller
+Oreophryne B,insulana,"Kraus_2016, Zweifel_1956",5>3,basally webbed,1/4 eye diameter,Ligamentous,Whinny,
+Oreophryne B,matawan,Kraus_2016,5≥3,none,1/4 eye diameter,Ligamentous,Rattle,
+Oreophryne B,meliades,Kraus_2016,5~3,basally webbed,1/3 eye diameter,Ligamentous,Whinny,1.154975924
+Oreophryne B,penelopeia,Kraus_2016,5>3,basally webbed,1/4 eye diameter,Ligamentous,Whinny,1.262043881
+Oreophryne B,phoebe,Kraus_2017,5>3,well webbed,1/4 eye diameter,Cartilaginous,Whinny,1.246785999
+Oreophryne B,picticrus,Kraus_2016,5>3,basally webbed,1/3 eye diameter,Ligamentous,Whinny,1.279046178
+Aphantophryne,pansa,Zweifel_1989,5<3,none,1/4 eye diameter,Cartilaginous,Clicking,0.9406841277
+Aphantophryne,sabini,Zweifel_1990,5<3,none,1/4 eye diameter,Cartilaginous,Clicking,1.052819445

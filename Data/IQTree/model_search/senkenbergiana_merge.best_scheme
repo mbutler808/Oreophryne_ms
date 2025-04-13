@@ -1,0 +1,8 @@
+DNA, sia_pos1_sia_pos2_bdnf_pos2_bdnf_pos3_nxc_pos1 = 1-407\3, 2-407\3, 409-924\3, 410-924\3, 925-1479\3
+DNAF, sia_pos3 = 3-407\3
+DNA, bdnf_pos1_nxc_pos3 = 408-924\3, 927-1479\3
+DNAF, nxc_pos2 = 926-1479\3
+DNAF, cyb_pos1_nd4_pos1 = 1480-1989\3, 1990-2475\3
+DNAF, cyb_pos2_nd4_pos2 = 1481-1989\3, 1991-2475\3
+ASC_DNAF, cyb_pos3 = 1482-1989\3
+ASC_DNAF, nd4_pos3 = 1992-2475\3

@@ -1,0 +1,8 @@
+#nexus
+begin sets;
+	charset sia = 1-407;
+	charset bdnf = 408-924;
+	charset nxc = 925-1479;
+	charset cyb = 1480-1989;
+	charset nd4 = 1990-2475;
+end;

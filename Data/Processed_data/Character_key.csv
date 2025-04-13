@@ -1,0 +1,11 @@
+Trait,Definition
+Toe length,"Length of 5th toe compared to length of 3rd toe (5<3, 5~3, 5>3)"
+Toe webbing,"Degree of webbing based on how high toe webs reach on the 5th toe (none, basally webbed, well webbed)"
+Finger webbing,Whether or not finger webbing is present
+Tympanum size,"Tympanum diameter relative to eye diameter (¼, ⅓, or ½)"
+Pectoral girdle connector type,"Type of connection between scapula and procoracoid, either ligamentous or cartilaginous (from literature)"
+Pupil horizontal,Whether the pupil is horizontal (from literature)
+Teeth,Whether or not teeth are present
+Palatal folds,Whether two horizontal palatal folds in front of the pharynx are present
+Call type,A description of call type (from literature)
+F/T (relative size of finger:toe pads),The ratio of finger pad width to toe pad width (either measured [numerical] or found in literature [described])
