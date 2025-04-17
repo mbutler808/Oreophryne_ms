@@ -12,6 +12,20 @@ In addition, the hypothesis that Aphatophryne is contained within one of these c
 
 We add a second taxon of _Aphantophryne_, _A. sabini_ also in a molecular phylogeny for the first time, as well as additional samples of _Aphantophryne pansa_ from a new site.
 
+# Cut from Auparoparo diagnosis
+
+Researchers should be aware of a high-elevation morphotype exception that are terrestrial or fossorial species, included in subgenus nov. _Aphantophryne_, previously genus _Aphantophryne_. We suspect that there are other members in the genus that have not yet been sequenced which may exhibit specialized features that vary from those described, including smaller body size and less digital disc expansion.
+
+We also deprecate the genus _Aphantophryne_ to a subgenus within _Auparoparo_, transferring species: _Auparoparo Aphantophryne pansa_ (Fry, 1917), _Auparoparo Aphantophryne sabini_ (Zweifel and Parker, 1989).
+
+__Subgenus Aphantophryne (Fry 1917)__
+
+__Diagnosis:__  These species were previously designated as the genus _Aphantophryne_ and have the following distinctive morphological traits including: (1) absence of clavicles and procoracoid; (3) loss of a sternum or presence of a vestigial sternum; (4) absence of digital discs; (5) unwebbed toes and rounded tips; (6) clicking calls (7) fossorial lifestyle.
+
+__Content:__ _Aphantophryne_ consists of three named species, _A. pansa_, _A. sabini_, and _A. minuta_. Zweifel and Parker (1989) mentioned the species A. minuta differs from the other two in its small size and relatively smaller first finger in proportion. Currently, no sample or phylogenetic data of A. minuta was obtained and thus this species is not included in this analysis. Given that _A. pansa_ [@Fry:1917] is the type species of the genus _Aphantophryne_, we deprecate Aphantophryne to a subgenus within _Auparoparo_.
+
+ and therefore recommend deprecation of _Aphantophryne_ to a subgenus within _Auparoparo_
+ 
 # Cut from discussion
 
 One might hope that this trait is at least useful for limiting specimens to these two genera, however, our phylogenetic results clearly show that this trait may lead to the exclusion of non-arboreal taxa (i.e., the fossorial "Aphantophryne").”
@@ -33,4 +47,4 @@ Oreophryne sensu lato are known from Western New Guinea, Sulawesi, the Lesser Su
 
 
 Our study illustrates why the recent proposal of (@Dubois:2021) synonymizing all Asterophryinae genera into one large genus-level clade would only serve to confuse our understanding of Pacific biodiversity. Although they did not find phylogenetic structure at the generic level, it is important to point out that these results were based on a supermatrix approach and are in conflict with all other recent molecular studies (@Koehler:2008; @deSa:2012; @Peloso:2016; @Rivera:2017; @Tu:2018; @Hill:2022; @Hill:2023) that found substantial phylogenetic structure among the recognized genera. Future studies must remain vigilant with regard to data quality and carefully interrogate data obtained from public databases, as it is well-known that errors in taxonomic identity of the sample are often left uncorrected, among other sources of potential error. Although it is commonly assumed that good data will swamp out the bad, in our experience this is not necessarily true. @Hill:2022 found that nodal support was sensitive to completion of the data matrix and rigorous scrutiny of data quality (i.e., strong data cleaning). These issues will only be amplified in sparse supermatrix approaches where only few data are available for many inferences, and may explain the discrepancy between studies.
-Taxonomists have been working for over a hundred years to clarify the structure of this group, and the growing body of molecular phylogenetic studies has thus far confirmed the monophyly of 16 generic-level taxa. 
+Taxonomists have been working for over a hundred years to clarify the structure of this group, and the growing body of molecular phylogenetic studies has thus far confirmed the monophyly of 16 generic-level taxa.
