@@ -9,6 +9,7 @@
 # Private directories
 manuscript_private/
 papers/
+Products/old/
 
 # History files
 .Rhistory
