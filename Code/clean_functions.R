@@ -6,7 +6,7 @@ nospaces <- function(x) gsub(" ", "_", x)  # replace spaces with "_"
 no_ <- function(x) gsub("_", " ", x)  # replace spaces with "_"
 delspaces <- function(x) gsub(" ", "", x)  # deletes spaces
 ### Better Tiplabel functions
-getid <- function(x) gsub("(.*)\\-(.*)\\-(.*)\\-(.*)","\\1", no_(x) )  # split tiplabel by - grab id
+getid <- function(x) gsub("(.*)\\[- ](.*)\\-(.*)\\-(.*)","\\1", no_(x) )  # split tiplabel by - grab id
 getsp <- function(x) gsub("(.*)\\-(.*)\\-(.*)\\-(.*)","\\2", no_(x) )
 getsite <- function(x) gsub("(.*)\\-(.*)\\-(.*)\\-(.*)","\\3", no_(x) )
 getlocality <- function(x) gsub("(.*)\\-(.*)\\-(.*)\\-(.*)","\\4", no_(x) )

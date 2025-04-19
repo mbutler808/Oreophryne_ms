@@ -31,15 +31,22 @@ taxa$fontface <- "italic"
 taxa$fontface[taxa$reference] <- "bold.italic"  # bold for references
 taxa$outgroup <- taxa$id %in% c("UMMZ211174", "UMMZ211181", "UMMZ219489") # outgroup flag
 taxa$gcol <- gcol[taxa$genus]
+taxa$type_locality <- gsub(";", "/", taxa$type_locality)
 
 # The senkengerbiana dataset has old taxa labels
 tips <- get_taxa_name(ggtree(iqtree))
-tips <- newgenus(tips)
-keep <- taxa$label %in%  tips # keep taxa in tree
+newtips <- newgenus(tips)
+tdat <- data.frame(tips, newtips)
+iqtree2 <- rename_taxa(iqtree, tdat, tips, newtips)
+keep <- taxa$label %in%  newtips # keep taxa in tree
 
 # metadata matches tree now
-taxa <- taxa[keep,]   # 235 taxa
+taxa <- taxa[keep,]   # 238 taxa
+
+tree <- full_join(iqtree2, taxa, by="label")
+## full_join(iqtree2, d, by="label") %>% as_tibble %>% as.data.frame # check merge
 
 ######### Output 
 # metadata for taxa that match tips on tree
 write.csv(taxa, "../Data/Processed_data/metadata.csv", row.names=F)
+write.beast(tree, "../Data/Processed_data/tree_with_data.nex")

@@ -16,12 +16,13 @@ library(tidytree)
 library(treeio)
 library(ggtree)
 library(dplyr)
-library(maps) # for the map plotting
-library(phytools)
 library(ggplot2)
+
 library(ape)
 library(ggpmisc)
 library(gridExtra)
+library(maps) # for the map plotting
+library(phytools)
 
 ## ---- functions --------
 source("clean_functions.R") # contains no_()
@@ -37,7 +38,7 @@ gc <- read.csv("../Data/gencolorABC.csv")    # color codes by genus
 gcol <- gc$col
 names(gcol) <- gc$gen      # gcol holds the colors for the genera (value, key)  
 
-tree <- read.beast("../Data/Proc	essed_data/tree_with_data.nex")
+tree <- read.beast("../Data/Processed_data/tree_with_data.nex")
 
 ## ---- plotfulltree --------
 p <- ggtree(iqtree, size=.1)  %<+% d +  # add annotation dataframe
@@ -123,15 +124,23 @@ print_output("../Products/Figures/FullTree_support_highlight", gradient_tree(p_s
 ## ---- phylomap --------
 
 dat <- tree %>% as_tibble %>% as.data.frame %>% filter(!is.na(label_clean)) # tips only
-odat <- dat %>% filter(genus=="Oreophryne")
-adat <- dat %>% filter(genus=="Auparoparo"|genus=="Aphantophryne")
+
+library(sf)
+library(mapview)
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(rnaturalearthhires)
+library(grid)
+
+
+odat <- d %>% filter(genus=="Oreophryne")
+adat <- d %>% filter(genus=="Auparoparo"|genus=="Aphantophryne")
 
 world_map <- map_data("world")
 southpacific <- subset(world_map, 
 	world_map$region=="Papua New Guinea"|
 	world_map$region=="Indonesia"|
-	world_map$region=="Philippines" &
-	
+	world_map$region=="Philippines" 
 	)
 	
 #Strip the map down so it looks super clean (and beautiful!)
@@ -169,8 +178,167 @@ map_data <-
     size=1.5) 
 map_data 
 
-map_data + cleanup
 
+osf <- st_as_sf(odat, coords=c("longitude", "latitude"))
+asf <- st_as_sf(adat, coords=c("longitude", "latitude"))
+vp <- viewport(x=0.8, y=0.8,
+                   width=unit(3, "inches"), height=unit(2,"inches"))
+grid.show.viewport(vp)
+
+world <- ne_countries()
+
+print(map_sf)
+nrow(map_sf)
+plot(map_sf$geometry)
+
+#https://r-graph-gallery.com/168-load-a-shape-file-into-r.html
+
+par(mar = c(0, 0, 0, 0))
+plot(st_geometry(map_sf), col = "#f2f2f2", bg = "skyblue", lwd = 0.25, border = 0)
+
+library(ggplot2)
+ggplot(map_sf) +
+  geom_sf(fill = "#69b3a2", color = "white") +
+  theme_void()
+  
+scales::show_col(c("#9DBF9E", "#A84268", "#FCB97D", "#C0BCB5", "#4A6C6F", "#FF5E5B"))
+
+#### begin map code
+
+map_sf <- ne_countries(country = c("Papua New Guinea", "Indonesia", "Philippines"), scale=50, returnclass="sf")
+
+mp <- ggplot(map_sf) +
+	geom_sf(color = "grey90", fill = "#f2f2f2", linewidth = 0.25) +
+	coord_sf(xlim = c(120, 154), ylim = c(-12, 10)) +
+#	  theme_void() + 
+  theme(axis.title = element_blank(),
+        panel.background = element_rect(fill = "lightblue", colour = NA)
+#        panel.background = element_rect(fill = "skyblue", colour = NA)
+        )
+
+mp +
+  geom_point(data=adat, 
+  	aes(x=longitude, y=latitude), 
+  	colour="grey50", 
+  	fill="red", 
+    pch=21, 
+    size=2, 
+    alpha=.7) +
+  geom_point(data=odat, 
+    aes(x=longitude, y=latitude), 
+    colour="grey50", 
+    fill=gcol["Oreophryne"], 
+    pch=24, 
+    size=2, 
+    alpha=.7) +
+  geom_hline(yintercept = -8.75, lty = 2, colour = "red") +
+  geom_hline(yintercept = -12, lty = 2, colour = "red") +
+  geom_vline(xintercept = 147, lty = 2, colour = "red") +
+  geom_vline(xintercept = 155, lty = 2, colour = "red") 
+
+#xlim = c(120, 154), ylim = c(-12, 10)
+        
+mpdat <- mp +
+  geom_point(data=adat, 
+  	aes(x=longitude, y=latitude), 
+  	colour="red", 
+    pch="+", 
+    size=8, 
+    alpha=.75) +
+  geom_point(data=odat, 
+    aes(x=longitude, y=latitude), 
+    colour="grey50", 
+    fill=gcol["Oreophryne"], 
+    pch=24, 
+    size=2, 
+    alpha=.75) +
+  geom_rect(aes(xmin = 149, xmax = 154.5, ymin = -12, ymax = -8.75), color = "grey30", fill = NA) +
+  theme_void() +
+  theme(axis.title = element_blank(),
+        panel.background = element_rect(fill = "lightblue", colour = NA)
+        )
+
+inset <-  
+  ggplot(map_sf) + 
+	geom_sf(color = "grey90", fill = "#f2f2f2", linewidth = 0.25) +
+	coord_sf(xlim = c(149, 154.5), ylim = c(-12, -9)) +
+  geom_point(data=adat, 
+  	aes(x=longitude, y=latitude), 
+  	colour="red", 
+    pch="+", 
+    size=8, 
+    alpha=.75) +
+  geom_point(data=odat, 
+    aes(x=longitude, y=latitude), 
+    colour="grey50", 
+    fill=gcol["Oreophryne"], 
+    pch=24, 
+    size=3, 
+    alpha=.75) +
+  geom_rect(aes(xmin = 149, xmax = 154.5, ymin = -12, ymax = -8.75), color = "grey30", fill = NA) +
+  labs(x = NULL, y = NULL) +  
+  xlim(149, 154.5) +
+  ylim(-12, -8.75) +
+  theme_void() +
+  theme(axis.title = element_blank(),
+        panel.background = element_rect(fill = "lightblue", colour = NA)) +
+  guides(size = "none") 
+
+
+mpdat
+print(inset, vp = viewport(0.75, 0.75, width = 0.5, height = 0.5))  
+  
+mpdat  +
+  ggsn::north(location = "topleft", scale = 0.8, symbol = 12,
+               x.min = 145, x.max = 155, y.min = 8, y.max = 10) +
+  ggsn::scalebar(location = "bottomleft", dist = 100,
+           dist_unit = "km", transform = TRUE, 
+           x.min=150.5, x.max=152, y.min=-38, y.max=-30,
+           st.bottom = FALSE, height = 0.025,
+           st.dist = 0.05, st.size = 3)
+
+
+
+	
+pmap <- ggplot() + 
+		xlab("") + 
+		ylab("") +
+		geom_polygon(data=southpacific, 
+			aes(x=long, y=lat, group=group), 
+            colour="grey", 
+            fill="light green",
+            alpha=.7) +
+		coord_map(xlim = c(120, 154), ylim = c(-12, 10)) 
+
+adat %>% ggplot() +
+	geom_sf(data=map_sf, fill = "#69b3a2", color = "white") +
+	theme_void() +
+	coord_map(xlim = c(120, 154), ylim = c(-12, 10)) 
+
+map_data <- 
+  pmap +
+  geom_point(data=adat, 
+  	aes(x=longitude, y=latitude), 
+  	colour="red", 
+    pch=19, 
+    size=1.5) +
+  geom_point(data=odat, 
+    aes(x=longitude, y=latitude), 
+    colour=gcol["Oreophryne"], 
+    pch=19, 
+    size=1.5) 
+map_data 
+
+
+  
+print_output(filepath="../Products/Figures/map", map_data+cleanup)
+pdf(file="../Products/Figures/map.pdf", height=6, width=10)
+  print(map_data + cleanup)
+dev.off()
+png(file="../Products/Figures/map.png", height=6, width=10)
+  print(map_data + cleanup)
+  print(map_data + cleanup, vp=vp)
+dev.off()
 
 tree <- dtree204   # one sample per species tree
 tree <- rename_taxa(tree, label, gensp)  # labels are genus species

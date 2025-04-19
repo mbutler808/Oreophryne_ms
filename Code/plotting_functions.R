@@ -201,7 +201,7 @@ print_bubble_trees <- function(tt=tree, references, outgroups, label.size=3, hju
 
 ## ---- pdfpng --------
 # print pdf and png versions of output
-print_output <- function(filepath, p, height=10, width=7, units="in", res=300){
+print_pdfpng <- function(filepath, p, height=10, width=7, units="in", res=300){
    pdf(file=paste0(filepath, ".pdf"), height=height, width=width)
       print(p)
    dev.off()

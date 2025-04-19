@@ -12,6 +12,13 @@ In addition, the hypothesis that Aphatophryne is contained within one of these c
 
 We add a second taxon of _Aphantophryne_, _A. sabini_ also in a molecular phylogeny for the first time, as well as additional samples of _Aphantophryne pansa_ from a new site.
 
+# Cut from results - this section mentions all Oreophryne, Auparoparo, and Aphantophryne 
+
+_Oreophryne_ sensu lato is diagnosed by characters of the pectoral girdle: posessing highly reduced, curved precoracoid cartilages and clavicles, and lacking an omosternum [@Parker:1934, @Zweifel:2003]. We found that this suite of characters are present in both _Oreophryne_ and _Auparoparo_, but not _Aphantophryne_, and therefore is not diagnostic for _Oreophryne_ nor _Auparoparo_ either separately nor for both clades together (@tbl-morph). _Aphantophryne_ in contrast, lacks clavicles as well as procoracoid cartilages and an omasternum. 
+
+
+Two traits imperfectly segretate between the clades, toe disc widths and call type (@tbl-morph), which may assist in preliminary identification. _Aphantophryne_ is a small, high-elevation fosssorial clade that call using "clicks" and have no toe discs. They have undifferentiated toe tips with ordinary squamous epithelium [@Green:1986]. _Oreophryne_ is an arboreal clade with expanded digital dics of roughly equal width between the fingers and toes, whereas _Auparoparo_ excluding _Aphantophryne_ have visibly larger finger pads, with finger pads roughly 20-30% wider than toes. Both _Oreophryne_ and _Auparoparo_ excluding _Aphantophryne_ use a variety of call types, with "honks" or "peeps" used only by _Oreophryne_, whereas "whinny" calls are used only by arboreal _Auparoparo_. A minority of species in both groups use the "rattle" call type. Aside from the fact that _Aphantophryne_ and _Auparoparo_ are so phenotypically distinct that no diagnostic traits identify them as a group, both toe disc width and call type are variable traits with some overlap and thus not reliable for diagnosis. Furthermore, toe disc is clearly an adaptive trait for arboreality. 
+
 # Cut from Auparoparo diagnosis
 
 Researchers should be aware of a high-elevation morphotype exception that are terrestrial or fossorial species, included in subgenus nov. _Aphantophryne_, previously genus _Aphantophryne_. We suspect that there are other members in the genus that have not yet been sequenced which may exhibit specialized features that vary from those described, including smaller body size and less digital disc expansion.
@@ -26,6 +33,9 @@ __Content:__ _Aphantophryne_ consists of three named species, _A. pansa_, _A. sa
 
  and therefore recommend deprecation of _Aphantophryne_ to a subgenus within _Auparoparo_
  
+__Comment:__ According to ICZN convention for nomenclature assignment, the presence of one _Aphantophryne pansa_ sequence grouped within _Auparoparo_ could be considered a name of priority [@ICZN:1999]. However, we suspect that _Aphantophryne_ may actually represent a highly specialized morphotypic group with members belonging to other clades, which would invalidate its generic status. Future research is needed to clarify the placement and integrity of _Aphantophryne_. Furthermore, based on the tremendous morphological and lifestyle differences between _Aphantophryne pansa_ and other species of _Auparoparo_, we do not consider this name to be representative of the entire clade.
+
+
 # Cut from discussion
 
 One might hope that this trait is at least useful for limiting specimens to these two genera, however, our phylogenetic results clearly show that this trait may lead to the exclusion of non-arboreal taxa (i.e., the fossorial "Aphantophryne").”
