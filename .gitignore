@@ -10,6 +10,7 @@
 manuscript_private/
 papers/
 Products/old/
+Data/Raw_data/redlist_species_data/
 
 # History files
 .Rhistory

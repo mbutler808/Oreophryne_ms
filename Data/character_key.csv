@@ -1,8 +1,8 @@
 Trait,Definition
-Procoracoids,"Size and shape of the procoracoid cartilages, if present"
-Clavicles,"Size and shape of the clavicles, if present"
+Procoracoids,Size and shape of the procoracoid cartilages
+Clavicles,Size and shape of the clavicles
 Omasternum,Presence or absence of the omasternum
-Sternum,"Sternal plate, or cartilaginous sternum, if present"
+Sternum,"Sternal plate, or cartilaginous sternum"
 Call type,Qualitative description of call type
 Finger:toe width,The ratio of finger pad width to toe pad width
 Pectoral ligament,"Type of connection between scapula and procoracoid, either ligamentous or cartilaginous"

@@ -1,11 +1,15 @@
 Trait,Definition
-Toe length,"Length of 5th toe compared to length of 3rd toe (5<3, 5~3, 5>3)"
+Procoracoids,Size and shape of the procoracoid cartilages
+Clavicles,Size and shape of the clavicles
+Omasternum,Presence or absence of the omasternum
+Sternum,"Sternal plate, or cartilaginous sternum"
+Call type,Qualitative description of call type
+Finger:toe width,The ratio of finger pad width to toe pad width
+Pectoral ligament,"Type of connection between scapula and procoracoid, either ligamentous or cartilaginous"
+Rel toe length,"Relative length of 5th toe compared to length of 3rd toe (5<3, 5=3, 5>3)"
 Toe webbing,"Degree of webbing based on how high toe webs reach on the 5th toe (none, basally webbed, well webbed)"
-Finger webbing,Whether or not finger webbing is present
-Tympanum size,"Tympanum diameter relative to eye diameter (¼, ⅓, or ½)"
-Pectoral girdle connector type,"Type of connection between scapula and procoracoid, either ligamentous or cartilaginous (from literature)"
-Pupil horizontal,Whether the pupil is horizontal (from literature)
-Teeth,Whether or not teeth are present
+Tympanum:eye diameter,"Tympanum diameter relative to eye diameter (¼, ⅓, or ½)"
+Reference,Citation
+Pupil horizontal,Whether the pupil is horizontal 
+Teeth,Whether teeth are present
 Palatal folds,Whether two horizontal palatal folds in front of the pharynx are present
-Call type,A description of call type (from literature)
-F/T (relative size of finger:toe pads),The ratio of finger pad width to toe pad width (either measured [numerical] or found in literature [described])

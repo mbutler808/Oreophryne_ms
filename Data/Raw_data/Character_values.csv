@@ -1,0 +1,31 @@
+genus,species,reference,toe_length,toe_webbing,tympanum,pec_type,call_type,f/t_ratio,ft_comment
+Oreophryne A,anamiatoi,Kraus_Allison_2009,5>3,none,1/4 ,cartilaginous,chuckle or cackle,1.216223478,
+Oreophryne A,aurora,Kraus_2016,5>3,well webbed,1/4 ,ligamentous,harsh croak,,
+Oreophryne A,biroi,Zweifel_2003,5~3,well webbed,1/4 ,ligamentous,rattle,1.106785792,
+Oreophryne A,brachypus,Zweifel_2003,5>3,well webbed,1/4 ,ligamentous,Long squeak,1.079561714,
+Oreophryne A,cameroni,Kraus_2013,5>3,basally webbed,1/4 ,cartilaginous,peep,,
+Oreophryne A,geislerorum,Zweifel_2003,5>3,well webbed,1/3 ,ligamentous,rattle,,
+Oreophryne A,inornata,Kraus_2016,5>3,basally webbed,1/4 ,ligamentous,honk,0.9815599935,
+Oreophryne A,lemur,Kraus_2016,5>3,basally webbed,1/4 ,ligamentous,honk,,
+Oreophryne A,loriae,Kraus_2016,5>3,well webbed,1/3 ,ligamentous,honk,,
+Oreophryne A,notata,Zweifel_2003,5>3,none,1/4 ,cartilaginous,peep,,
+Oreophryne A,parkeri,"Kraus_2013, Zweifel_2003",5>3,well webbed,1/3 ,ligamentous,peep,,
+Oreophryne A,parkopanorum,Kraus_2013,5<3,none,1/4 ,cartilaginous,,,
+Oreophryne A,frontifasciata,"Horst_1883, Brongersma 1948",5>3,basally webbed,1/2,cartilaginous,,,toes slightly smaller
+Oreophryne A,graminis,Gunther_Richards_2012,5>3,none,1/3 ,cartilaginous,peep,,approx equal
+Oreophryne A,senckenbergiana,"Peters_Doria_1878, Parker 1934",5~3,basally webbed,1/3 ,cartilaginous,,,toes slightly smaller
+Oreophryne A,variabilis,Boulenger_1896,,none,>2/3 ,cartilaginous,,,toes much smaller
+Oreophryne A,anulata,Stejneger_1908,5>3,none,1/2 ,,,,toes slightly smaller
+Oreophryne A,philosylleptoris,Kraus_2016,5>3,well webbed,1/3 ,ligamentous,honk,1.037032136,
+Oreophryne B,equus,Kraus_2016,5~3,basally webbed,1/4 ,ligamentous,whinny,1.331130996,
+Oreophryne B,ezra,Kraus_Allison_2009,5>3,basally webbed,1/4 ,ligamentous,chatter,,
+Oreophryne B,nana,"Brown and Alcala, 1967",5~3,none,1/2 ,cartilaginous,,,approx equal
+Oreophryne B,brunnea,Kraus_2017,5~3,basally webbed,1/3 ,ligamentous,rattle,,toes smaller
+Oreophryne B,insulana,"Kraus_2016, Zweifel_1956",5>3,basally webbed,1/4 ,ligamentous,whinny,,
+Oreophryne B,matawan,Kraus_2016,5≥3,none,1/4 ,ligamentous,rattle,,
+Oreophryne B,meliades,Kraus_2016,5~3,basally webbed,1/3 ,ligamentous,whinny,1.154975924,
+Oreophryne B,penelopeia,Kraus_2016,5>3,basally webbed,1/4 ,ligamentous,whinny,1.262043881,
+Oreophryne B,phoebe,Kraus_2017,5>3,well webbed,1/4 ,cartilaginous,whinny,1.246785999,
+Oreophryne B,picticrus,Kraus_2016,5>3,basally webbed,1/3 ,ligamentous,whinny,1.279046178,
+Aphantophryne,pansa,Zweifel_1989,5<3,none,1/4 ,cartilaginous,click,,
+Aphantophryne,sabini,Zweifel_1990,5<3,none,1/4 ,cartilaginous,click,,
