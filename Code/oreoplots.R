@@ -28,7 +28,7 @@ source("plotting_functions.R") # contains no_()
 
 ## ---- loaddata --------
 # the full tree
-iqtree <- read.iqtree("../Data/IQTree/oreophryne_aphantophryne_references_trimmed_allspecies/oreophryne_aphantophryne_references_trimmed.treefile") 
+iqtree <- read.iqtree("../Data/IQTree/model_search/senkenbergiana_merge.treefile") 
 d <- read.csv("../Data/Processed_data/metadata.csv")      # tree metadata spreadsheet
 references <- read.csv("../Data/genus_references.csv")$type    # genus reference taxa 
 outgroups <- d$label[d$outgroup]

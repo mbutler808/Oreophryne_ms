@@ -1,5 +1,5 @@
 
-LEAST-SQUARE METHODS TO ESTIMATE RATES AND DATES - v.1.9.7 
+LEAST-SQUARE METHODS TO ESTIMATE RATES AND DATES - v.2.4.4 
 
 
 Input files:
@@ -31,12 +31,13 @@ Parameters:
   h to print Help 
   y to accept or type a letter to change an option (x = Exit) 
 Tree 1 
-Parameter to adjust variances was set to 0.0222192 (settable via option -b)
+Parameter to adjust variances was set to 0.0222184 (settable via option -b)
 Minimum branch length of time scaled tree (settable via option -u and -U): 0
+
 *RESULTS:
 - Dating results:
- rate 0.00897562, tMRCA -26.02 , objective function 1.20106
+ rate 0.00888598, tMRCA -26.237 , objective function 1.18464
 
 *********************************************************
 
-TOTAL ELAPSED TIME: 0.011722 seconds
+TOTAL ELAPSED TIME: 0.002593 seconds

@@ -9,6 +9,31 @@ set_flextable_defaults(
   border.color = "#666666",
   padding = 3,
 )
+## ---- sensulato --------
+dat <- read.csv("../Data/Raw_data/Oreophryne_sensu_lato.csv", as.is=T)
+
+names(dat) <- c("orig", "prev", "curr", "sp", "notes")
+dat <- dat %>% separate("orig", c("orig", "auth"), sep = "\\(") %>%
+	mutate(auth = paste0("(", auth)) %>%
+	mutate( sp = gsub("^([^ ]*)\\s([^ ]*)\\s(.*)$","\\2", orig))
+# REGEX explanation:
+# ^ start of string
+# ([^ ]*) = word (non-space character)
+# \\s = single space
+# (.*)$ = all characters til the end$
+
+dat$sp[dat$sp == "anulatus"] <- "anulata"
+dat$sp[dat$sp == "achatina"] <- "moluccensis"
+
+
+gps <- read.csv("../Data/Raw_data/Oreophryne_Type_Localities_v20250513.csv", skip=1)
+names(gps) <- c("orig", "latitude", "longitude")
+
+gps$sp <- gsub("^([^ ]*)\\s([^ ]*)\\s(.*)$","\\2", gps$orig )
+gps$citation <- gsub("^([^ ]*)\\s([^ ]*)\\s(.*)$","\\3", gps$orig )
+
+dat2 <- merge(dat, gps, by="sp", all=T)
+write.csv(dat2, "dat2.csv")
 ## ---- transfers --------
 dat <- read.csv("../Data/taxonomic_transfers.csv", as.is=T)
 

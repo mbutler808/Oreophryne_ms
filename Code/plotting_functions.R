@@ -22,8 +22,7 @@ get_node_range <- function( treedata, x="Auparoparo" ){
 
 ## ---- gradienttree --------
 gradient_tree <- function (ggtree) {  # print tree with gradient highights
-   grad_ggtree <- 
-      ggtree + 
+   grad_ggtree <-       ggtree + 
       geom_hilight( 
          node=get_MRCA(ggtree, "Oreophryne"),
          fill=gcol["Oreophryne"],
@@ -32,7 +31,7 @@ gradient_tree <- function (ggtree) {  # print tree with gradient highights
          alpha=0.25) +
       geom_hilight( 
          node=get_MRCA(ggtree, "Auparoparo"), 
-         fill=gcol["Auparoparo"],
+         fill="red",
          type = "gradient", 
          gradient.direction = 'rt',
          alpha=0.25) 
@@ -201,7 +200,7 @@ print_bubble_trees <- function(tt=tree, references, outgroups, label.size=3, hju
 
 ## ---- pdfpng --------
 # print pdf and png versions of output
-print_pdfpng <- function(filepath, p, height=10, width=7, units="in", res=300){
+print_output <- function(filepath, p, height=10, width=7, units="in", res=300){
    pdf(file=paste0(filepath, ".pdf"), height=height, width=width)
       print(p)
    dev.off()

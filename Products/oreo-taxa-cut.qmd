@@ -1,3 +1,12 @@
+# From Allen
+
+We note that @Hill:2022 found _Aphantophryne pansa_ nested within "Oreophryne B." The three currently recognized species of Aphantophryne possess a unique suite of morphological features: (1) absence of clavicles and procoracoid cartilage; (2) seven presacral vertebrae; (3) digits with rounded tips lacking flattening or terminal grooves; and (4) short hind legs (Zweifel and Parker, 1989). Their relationship to Oreophryne (sensu lato) needs to be confirmed by future research.
+
+
+If we are to name "Oreophryne B"  as _Auparoparo_ we have got to assume that _Aphantophryne_ is not included in "Oreophryne B." I strongly suspect that it is not. Otherwise The rules for zoological nomenclature are clear; for the same reason that Oreophryne A remains as Oreophryne (because the type species is in that clade), Oreophryne B would become Aphantophryne if it includes Aphantophryne pansa.
+
+
+
 # Cut Aphantophryne text 1 {#sec-cut1}
 
 Recent molecular phylogenetic reconstruction of Asterophryinae has established with strong support that _Oreophryne_ sensu lato is in fact polyphyletic, and suggest that members of the genus _Aphantophryne_ may be contained within _Oreophryne_ sensu lato [@Hill:2022;@Hill:2023]. _Aphantophryne_ is a small, fossorial genus limited to high elevation that was first described by (@Fry:1917). They lack clavicles, and have never been hypothesized as members of Oreophryne on the basis of morphology.

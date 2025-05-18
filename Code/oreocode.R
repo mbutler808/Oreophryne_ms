@@ -38,7 +38,7 @@ gc <- read.csv("../Data/gencolorABC.csv")    # color codes by genus
 gcol <- gc$col
 names(gcol) <- gc$gen      # gcol holds the colors for the genera (value, key)  
 
-tree <- read.beast("../Data/Processed_data/tree_with_data.nex")
+#tree <- read.beast("../Data/Processed_data/tree_with_data.nex")
 
 ## ---- plotfulltree --------
 p <- ggtree(iqtree, size=.1)  %<+% d +  # add annotation dataframe
@@ -63,18 +63,18 @@ ss <- tibb %>%    # 207 taxa
    arrange (desc(id %in% references$id)) %>%  # move references to top
    distinct(across(gensp), .keep_all=TRUE) %>% as.data.frame  # drop duplicates
    
-todrop <- tibb$label %w/o% ss$label # drop 33 taxa at multiple sites, outgroups
+todrop <- tibb$label %w/o% ss$label # drop 32 taxa at multiple sites, outgroups
 todropid <- sub("[_-].*$", "", todrop)
 write.csv(data.frame("drops"=c(todrop, d$label[d$outgroup])), file="dropped_taxa_tips_fulliqtree.csv", row.names=F)
 
-dtree207og <- treeio::drop.tip(tree, todrop)  # ingroup tree with only one sample per species - 204 tips. 
-dtree204 <- treeio::drop.tip(tree, c(todrop, d$label[d$outgroup]))  # ingroup tree with only one sample per species - 204 tips. 
+dtree207og <- treeio::drop.tip(tree, todrop)  # tree with only one sample per species - 203 tips. 
+dtree204 <- treeio::drop.tip(tree, c(todrop, d$label[d$outgroup]))  # ingroup tree with only one sample per species - 200 tips. 
 
-keepids <- c("44363", "44369", "44373", "43952", "43954", "cf._pansa.3", "sencken") # leave in all the new aphantophrynes, senkenbergiana
-todrop <- grep(paste(keepids, collapse="|"), todrop, invert=T, value=T )  # drop 25 taxa
+keepids <- c("sencken") # leave in all  senkenbergiana
+todrop <- grep(paste(keepids, collapse="|"), todrop, invert=T, value=T )  # drop 30 taxa
 
-dtree215og <- treeio::drop.tip(tree, todrop)  # outgroup tree with all new samples, only one of others - 215 tips. 
-dtree212 <- treeio::drop.tip(tree, c(todrop, d$label[d$outgroup]))  # ingroup tree as above - 212 tips. 
+dtree215og <- treeio::drop.tip(tree, todrop)  # outgroup tree with all new samples, only one of others - 205 tips. 
+dtree212 <- treeio::drop.tip(tree, c(todrop, d$label[d$outgroup]))  # ingroup tree as above - 202 tips. 
 
 # Print trimmed iqtree 204 spp
 p <- ggtree(dtree204, size=.1) + 
@@ -92,8 +92,8 @@ print_output("../Products/Figures/TrimmedIQTree", p)
 
 dtree <- dtree212  # all new samples, no outgroups, one of other taxa
 
-mrcas <- sapply( c("Oreophryne", "Auparoparo", "Aphantophryne"), function(x) get_MRCA( ggtree(dtree), x))
-MRCA_labels <- data.frame(node=mrcas, MRCA_label=names(mrcas), letter=c("A", "B", "C"))
+mrcas <- sapply( c("Oreophryne", "Auparoparo"), function(x) get_MRCA( ggtree(dtree), x))
+MRCA_labels <- data.frame(node=mrcas, MRCA_label=names(mrcas), letter=c("A", "B"))
 
 p_support <- ggtree(dtree, size=.2) %<+% MRCA_labels  +
    geom_tiplab(aes(label=gensp, 
