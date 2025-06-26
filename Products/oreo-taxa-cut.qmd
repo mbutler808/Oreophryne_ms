@@ -1,3 +1,7 @@
+Previous Abstract (submitted to ZJLS):
+_Oreophryne_ sensu lato [@Boettger:1895\; 75 species] is the largest genus of the microhylid frog subfamily Asterophryinae, contains nearly all its arboreal species, and has a surprisingly expansive distribution across Papua New Guinea to Southeast Asia. Hill et al. (2022)  demonstrated that _Oreophryne_ is polyphyletic, consisting of two unrelated reciprocally monophyletic genera. We acquired type species samples (_O. senckenbergiana_) from North Maluku Island, Indonesia, allowing for a decisive phylogenetic resolution as to which clade can bear the name _Oreophryne_. Here we show that the type species is a member of the more basal clade [“Oreophryne A” in @Hill:2022] indicating that _Oreophryne_ is the sister clade to the rest of Asterophryinae. The North Maluku specimens are closely related, and diverged with New Guinea taxa about 10 MYA. We propose the name _Auparoparo_ for the new genus ("Oreophryne B"). We employ phylogenetic taxonomy to redefine _Oreophryne_ and _Auparoparo_ and show that they are morphologically undiagnosable. Our findings clearly demonstrate that a second clade of primarily arboreal frogs has evolved within Asterophryne, making these two clades strong candidates for convergent evolution. More complete sampling of additional species with greater range can help to further inform the dynamics of ecological diversification.
+
+
 Cut frontifasciata
 
 BJE01248,Oreophryne frontifasciata,"Kabupaten Halmahera Timur,
