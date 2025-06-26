@@ -1,16 +1,16 @@
 ---
-title: "Revealing the arboreal frog genus _Auparoparo_: A new classification after 130 years of _Oreophryne_ sensu lato, subfamily Asterophrinae" 
-author: "Allison Fisher and Ke Cao, Allen Allison, Bulisa Iova, and Marguerite Butler"
+title: "Revealing the arboreal frog genus _Auparoparo_: A new classification after 130 years of _Oreophryne_ sensu lato, subfamily Asterophrinae (Anura: Microhylidae)"
+author: "Allison Fisher, Ke Cao, Allen Allison, Bulisa Iova, and Marguerite Butler"
 date: "`r Sys.Date()`"
 keywords:
   - frogs
-  - phylogenetic nomenclature
-  - phylogenetic taxonomy
-  - new genera
-  - Phylogenetics
-  - morphology
   - homoplasy
-  - Indo-Pacific
+  - indo-pacific
+  - morphology
+  - new classification
+  - new genera
+  - phylogenetic nomenclature
+  - phylogenetics
 license: "CC BY"
 knitr:
   opts_chunk:
@@ -32,8 +32,7 @@ format:
       gutter-width: 1.5rem
   docx:
     toc: false
-    format: context
-    interlinespace: 2
+    reference-doc: custom-reference-doc-doublespace.docx
     number-sections: false
     highlight-style: github
   pdf:
@@ -46,15 +45,15 @@ csl: evolution.csl
 ---
 
 {{< pagebreak >}}
-# Abstract 
+# Abstract
 
-_Oreophryne_ sensu lato [@Boettger:1895\; 75 species] is the largest genus of the microhylid frog subfamily Asterophryinae, contains nearly all its arboreal species, and has a surprisingly expansive distribution across Papua New Guinea to Southeast Asia. Hill et al. (2022)  demonstrated that _Oreophryne_ is polyphyletic, consisting of two unrelated reciprocally monophyletic genera. We acquired type species samples (_O. senckenbergiana_) from North Maluku Island, Indonesia, allowing for a decisive phylogenetic resolution as to which clade can bear the name _Oreophryne_. Here we show that the type species is a member of the more basal clade [“Oreophryne A” in @Hill:2022] indicating that _Oreophryne_ is the sister clade to the rest of Asterophryinae. The North Maluku specimens are closely related, and diverged with New Guinea taxa about 10 MYA. We propose the name _Auparoparo_ for the new genus ("Oreophryne B"). We employ phylogenetic taxonomy to redefine _Oreophryne_ and _Auparoparo_ and show that they are morphologically undiagnosable. Our findings clearly demonstrate that a second clade of primarily arboreal frogs has evolved within Asterophryne, making these two clades strong candidates for convergent evolution. More complete sampling of additional species with greater range can help to further inform the dynamics of ecological diversification.
+Despite 130 years of active study, the frog genus _Oreophryne_ sensu lato [@Boettger:1895], has only recently been discovered as polyphyletic, consisting of two unrelated reciprocally monophyletic genera. Here we show that these clades are undiagnosible using morphology and provide a phylogenetic taxonomic definition for the two genera. We acquired type species samples (_O. senckenbergiana_) from North Maluku Island, Indonesia, allowing for a decisive phylogenetic resolution for which clade retains the name _Oreophryne_, naming the other, unrelated genus of arboreal frogs **_Auparoparo_ gen. nov.** from the indigenous language Motu. Our findings clearly demonstrate that a second clade of primarily arboreal frogs has evolved within Asterophryne, with striking morphological similarity, given that the other non-arboreal genera are quite distinct. Furthermore, our findings present a cautionary tale illustrating that polyphyletic (non-evolutionary) groups may still be in use today, as identifying taxa to include in phylogenetic analysis based on traditional taxonomy without confirmation of monophyly via inclusion of sister taxa (i.e., employing a phylogenetic definition) can mislead evolutionary research, even today.  
 
 {{< pagebreak >}}
 
 # Introduction
 
-The frog genus _Oreophryne_ sensu lato [@Boettger:1895] is the largest genus of the hyperdiverse Asterophryinae, the largest subfamily of Microhylidae. With 75 diagnosed species, _Oreophryne_ sensu lato makes up one fifth of the currently ~365 recognized species of Asterophryinae [@Frost:2024;@Hill:2022], despite being only one of ~16 genera. _Oreophryne_ sensu lato are conspicuously arboreal (or scansorial) and the genus accounts for nearly all arboreal species of Asterophryinae [@Menzies:2006;@Gunther:2001]. _Oreophryne_ sensu lato also has an unusally large geographic distribution, the largest of any genus in its subfamily [@Hill:2023a], with species centered on mainland New Guinea [@Zweifel:2003a;@Frost:2024] and its offshore islands including the DʻEntrecasteaux and Louisiade Archipelagos [@Zweifel:1956;@Kraus:2004;@Kraus:2009;@Kraus:2013], New Britain Island [@Werner:1898;@Zweifel:2003a], but ranging westward [@Muller:1894;@Boulenger:1896;@Ahl:1933;@Putri:2023] and northward to Indonesia [@Boettger:1895;@Setiadi:2010;@Gunther:2023] and the Southern Philippines Islands [@Alcala:1986;@Balinton:2015]. Most of species are small, arboreal or scansorial frogs that inhabit lowland to montane rain forest, but there is a small group of diminutive species that inhabit high elevation grasslands, some of which are terrestrial [@Zweifel:2005;@Gunther:2012;@Putri:2023]. 
+The frog genus _Oreophryne_ sensu lato [@Boettger:1895] is the largest genus of the hyperdiverse Asterophryinae, the largest subfamily of Microhylidae. With 75 diagnosed species, _Oreophryne_ sensu lato makes up one fifth of the currently ~365 recognized species of Asterophryinae [@Frost:2024;@Hill:2022], despite being only one of ~16 genera. _Oreophryne_ sensu lato are conspicuously arboreal (or scansorial) and the genus accounts for nearly all arboreal species of Asterophryinae [@Menzies:2006;@Gunther:2001]. _Oreophryne_ sensu lato also has an unusally large geographic distribution, the largest of any genus in its subfamily [@Hill:2023a], with species centered on mainland New Guinea [@Zweifel:2003a;@Frost:2024] and its offshore islands including the DʻEntrecasteaux and Louisiade Archipelagos [@Zweifel:1956;@Kraus:2004;@Kraus:2009;@Kraus:2013], New Britain Island [@Werner:1898;@Zweifel:2003a], but ranging westward [@Muller:1894;@Boulenger:1896;@Ahl:1933;@Putri:2023] and northward to Indonesia [@Boettger:1895;@Setiadi:2010;@Gunther:2023] and the Southern Philippines Islands [@Alcala:1986;@Balinton:2015]. Most of species are small, arboreal or scansorial frogs that inhabit lowland to montane rain forest, but there is a small group of diminutive species that inhabit high elevation grasslands, some of which are terrestrial [@Zweifel:2005;@Gunther:2012;@Putri:2023].
 
 Although the generic taxonomy of the subfamily Asterophryinae has had a turbulent history [reviewed in @Hill:2022], the taxonomy of the genus _Oreophryne_ sensu lato in particular has been comparatively stable until recently. Generic designation to _Oreophryne_ sensu lato has traditionally relied on a pectoral anatomy that is distinct from all other genera, with highly reduced and distinctly curved clavicles [@Parker:1934;@Zweifel:2003]. However, this trait has never been demonstrated to be a synapomorphy. Hill et. al [-@Hill:2022;-@Hill:2023] established that _Oreophryne_ sensu lato represents two reciprocally monophyletic groups, temporarily labeled "Oreophryne A" and "Oreophryne B". Because the type species _Oreophryne senckenbergiana_ has not yet been included in large genus-level molecular phylogenies, it has not been possible to decipher which of the two groups can retain the genus name _Oreophryne_.
 
@@ -73,12 +72,12 @@ knitr::include_graphics("../Results/fig1.frogs.png")
 
 While _Oreophryne_ sensu lato is united morphologically (@fig-photos), large scale molecular phylogenetic analysis with many ingroup samples were required to clarify that this group contains two reciprocally monophyletic clades [@Hill:2022;@Hill:2023]. Early molecular phylogenetic studies suggested monophyly but only included a few taxa within a larger-scale study [@Koehler:2008 included 9 Oreophryne taxa;@deSa:2012 included 4]. @Rivera:2017 provided the first molecular evidence of a polyphyletic _Oreophryne_ sensu lato with 36 _Oreophryne_ within a larger phylogeny Asterophryinae which included 155 samples, followed by @Tu:2018’s sparse supermatrix approach with 18 taxa of Oreophryne falling out in various places within a much larger phylogeny, but both of these lacked strong nodal support connecting the hypothesized clades to the backbone of the phylogeny. The polyphyletic nature of _Oreophryne_ sensu lato was not clearly demonstrated until Hill et. al [-@Hill:2022;-@Hill:2023] included 44 taxa of _Oreophryne_ with complete data sampling within a 218 taxon phylogeny of Asterophryinae. This phylogeny is the  most complete and robust phylogeny to date. The two clades, labeled "Oreophryne A" and "Oreophryne B" have deep histories of ~ 18MY and ~16MY, respectively, with "Oreophryne A" most basal to the rest of the subfamily.
 
-The aims of this study are to assess the phylogenetic position of the type species of _Oreophryne_ (_Oreophryne senkenbergiana_) and its close sister taxon (_Oreophryne frontifasciata_) into a large Asterophrinae (subfamily-level) phylogeny, to develop a phylogenetic definition of _Oreophryne_ and the new genus, and to name and describe the new genus. Furthermore, we analyze the morphological characteristics and distribution of these genera to assist collectors when identifying putative _Oreophryne_ in the field, and discuss the evolutionary patterns and taxonomic utility of these morphological characters.
+The aims of this study are to assess the phylogenetic position of the type species of _Oreophryne_ (_Oreophryne senkenbergiana_) into a large Asterophrinae (subfamily-level) phylogeny, to develop a phylogenetic definition of _Oreophryne_ and the new genus, and to name and describe the new genus. Furthermore, we analyze the morphological characteristics and distribution of these genera to assist collectors when identifying putative _Oreophryne_ in the field, and discuss the evolutionary patterns and taxonomic utility of these morphological characters.
 
 # Materials and Methods
 
 ## Taxon Sampling
-Asterophryinae is an adaptive radiation with short branch lengths along the backbone separating generic-level taxa [@Rivera:2017;@Hill:2022;@Hill:2023], we reconstruct the phylogeny of _Oreophryne_ sensu lato within the larger context of the subfamily. We include 30 species and 18 unnamed taxa of _Oreophryne_ sensu lato within a larger dataset of 235 samples of 204 taxa of Asterophryinae collected across New Guinea, the Philippines, and Indonesia with three outgroup species to root the phylogeny (_Dyscophus antongilii_, _Scaphiophryne marmorata_, and _Platypelis grandis_). Importantly, we add the type species _Oreophryne senckenbergiana_ [@Boettger:1895] = _O. moluccensis_ [@Peters:1878] and the closely related _Oreophryne frontifasciata_, in a molecular phylogeny for the first time. Both taxa were collected in Halmahera, North Maluku Province, Indonesia by Iqbal Setiadi [@Setiadi:2010; @tbl-localities], near the type locality for _O. senkenbergiana_ [Halmahera, Ternate, and Bacan Islands, Indonesia as documented by @Peters:1878; @Boettger:1895].
+Asterophryinae is an adaptive radiation with short branch lengths along the backbone separating generic-level taxa [@Rivera:2017;@Hill:2022;@Hill:2023], we reconstruct the phylogeny of _Oreophryne_ sensu lato within the larger context of the subfamily. We include 30 species and 18 unnamed taxa of _Oreophryne_ sensu lato within a larger dataset of 234 samples of 203 taxa of Asterophryinae collected across New Guinea, the Philippines, and Indonesia with three outgroup species to root the phylogeny (_Dyscophus antongilii_, _Scaphiophryne marmorata_, and _Platypelis grandis_). Importantly, we include the type species _Oreophryne senckenbergiana_ [@Boettger:1895] in a molecular phylogeny for the first time. The samples were collected in Halmahera, North Maluku Province, Indonesia by Iqbal Setiadi [@Setiadi:2010; @tbl-localities], near the type locality for _O. senkenbergiana_ [Halmahera, Indonesia as documented by @Boettger:1895].
 
 ```{r, results="asis"}
 #| label: tbl-localities
@@ -92,7 +91,7 @@ library(officer)
 library(dplyr)
 set_flextable_defaults(
   theme_fun = theme_booktabs,
-  big.mark = " ", 
+  big.mark = " ",
   font.color = "#666666",
   border.color = "#666666",
   padding = 2,
@@ -117,16 +116,16 @@ portrait_properties <- prop_section(
 
 dat <- read.csv("../Data/Raw_data/locality.csv")
 
-dat |> 
-  flextable() |> 
-  separate_header() |> 
+dat |>
+  flextable() |>
+  separate_header() |>
   italic(part="body", j=c("Species")) |>
   autofit() |>
   set_header_labels(Latitude.Longitude = "Latitude, Longitude")
 ```
 
 ### Molecular Sequence
-We obtained nearly complete DNA sequence data for five loci (three nuclear: Seventh in Absentia [SIA], Brain Derived Neurotrophic Factor [BDNF], Sodium Calcium Exchange subunit-1 [NXC-1], and two mitochondrial loci (Cytochrome oxidase b [CYTB], and NADH dehydrogenase subunit 4 [ND4] from four samples of two taxa not previously sequenced and combined these with previously published data [@Rivera:2017; @Hill:2022; @Hill:2023] for an alignment of 240 samples with 207 taxa and 2475 base pairs that is 96% complete. All loci were complete for the added samples except for CYTB from _Oreophryne frontifasciata_.  Sequence quality was evaluated using chromatogram quality scores, checks for stop codons indicating pseudogenes, BLAST search [@Ye:2012], and concordance of pairwise similarity with other Asterophryinae sequences. Primer sequences and detailed methods are provided in [@Hill:2023]. We note that we excluded from the previous alignment [@Hill:2022; @Hill:2023] two samples of _Aphantophryne pansa_ (BPBM 5299 and BPBM 8312) which were deemed unreliable as they came from formalin-fixed material, and three samples that should be confirmed with new material (BPBM 22708 _Copiula tyleri_, BPBM 38939 _Copiula sp. 7_, BPBM 37753 _Paedophryne dekot_). We note that genetic material from 46 species of _Oreophryne_ sensu lato was not available for this molecular diagnosis.
+We obtained nearly complete DNA sequence data for five loci (three nuclear: Seventh in Absentia [SIA], Brain Derived Neurotrophic Factor [BDNF], Sodium Calcium Exchange subunit-1 [NXC-1], and two mitochondrial loci (Cytochrome oxidase b [CYTB], and NADH dehydrogenase subunit 4 [ND4] from four samples of two taxa not previously sequenced and combined these with previously published data [@Rivera:2017; @Hill:2022; @Hill:2023] for an alignment of 240 samples with 207 taxa and 2475 base pairs that is 96% complete. All loci were complete for the added samples.  Sequence quality was evaluated using chromatogram quality scores, checks for stop codons indicating pseudogenes, BLAST search [@Ye:2012], and concordance of pairwise similarity with other Asterophryinae sequences. Primer sequences and detailed methods are provided in [@Hill:2023]. We note that we excluded from the previous alignment [@Hill:2022; @Hill:2023] two samples of _Aphantophryne pansa_ (BPBM 5299 and BPBM 8312) which were deemed unreliable as they came from formalin-fixed material, and three samples that should be confirmed with new material (BPBM 22708 _Copiula tyleri_, BPBM 38939 _Copiula sp. 7_, BPBM 37753 _Paedophryne dekot_). We note that genetic material from 47 species of _Oreophryne_ sensu lato was not available for this molecular diagnosis.
 
 ### Morphology, Behavior, and Geographic Distribution
 We collected new morphological characters and reexamined traits compiled from the diagnosing literature [@Boettger:1895; @Parker:1934; @Kraus:2016; character states defined in @tbl-morphcharacters] for all named species of _Oreophryne_ in our phylogenetic dataset. Our sample included all species available in the collections of the Bishop Museum, Honolulu, Hawaii (BPBM): thirteen species of "Oreophryne A", eight species "Oreophryne B" (@tbl-morph). Finger and toe pads were photographed and length and width of the toe tips were measured using ImageJ software. Trait information for the remaining species were gathered from the literature, six species of “Oreophryne A” and one "Oreophryne B". In addition, we compiled information on call type from the literature and collection location from the respective collectors or the BPBM database (global positioning coordinates [GPS]; @tbl-morph). We examined the ability of morphological and behavioral characters to provide a diagnosis to the  genus-level clade consistent with molecular phylogenetics.
@@ -151,7 +150,7 @@ We use a maximum crown-clade definition under the PhyloCode [@deQueiroz:1990; @d
 ## Analyses, Visualization, and Data Availability
 All analyses were conducted and graphics produced in the R Statistical Computing Environment unless noted below [@R:2024].  Initial DNA sequence alignment was conducted using `MUSCLE` [@Edgar:2004] with manual adjustments in `Mesquite` [@Maddison:2023]. Phylogenetic reconstruction was conducted using the `IQTREE2` suite of software [@Lanfear:2012; @Minh:2020].
 
-The known ranges of _Oreophryne_ sensu lato were downloaded as shape files from the @IUCN:2025 redlist database, and sites from collection locations for _Oreophryne_ and _Auparoparo_ were mapped using the `sf` and `ggplot2` packages [@Pebesma:2018;@Wickham:2016], overlaid on a basemap created using `rnaturalearth`, `grid`, and `ggspatial` packages [@Massicotte:2023; @Dunnington:2023].  correspondence of the phylogenies to geographic map locations with the `phylo.to.map` function, both from the `phytools` package [@Revell:2012]. Tree graphics were produced with the `ggtree` package [@Yu:2017,@Yu:2020] supplemented by `ggplot2` [@Wickham:2016]. All data, alignments, and code to reproduce analyses are available in the public repository ...
+The known ranges of _Oreophryne_ sensu lato were downloaded as shape files from the @IUCN:2025 redlist database, and sites from collection locations for _Oreophryne_ and _Auparoparo_ were mapped using the `sf` and `ggplot2` packages [@Pebesma:2018;@Wickham:2016], overlaid on a basemap created using `rnaturalearth`, `grid`, and `ggspatial` packages [@Massicotte:2023; @Dunnington:2023].  Tree graphics were produced with the `ggtree` package [@Yu:2017,@Yu:2020] supplemented by `ggplot2` [@Wickham:2016]. All data, alignments, and code to reproduce analyses are available in the public repository ...
 
 
 # Results
@@ -162,7 +161,7 @@ A partition scheme including codon as well as locus resulted in an improvment of
 
 We recovered a maximum likelihood topology that confirms that _Oreophryne_ sensu lato is polyphyletic, with species falling into two independently-evolved, reciprocally monophyletic, highly-supported clades [@fig-phylo; @Hill:2022; @Hill:2023]. Nearly all nodes are moderately or highly supported, with most of the weakly supported nodes falling along the backbone where there are very short branch lengths as characteristic of an adaptive radiation.
 
-Furthermore, these findings demonstrate that the clade descended from node A should retain the converted clade name (CCN) _Oreophryne_, as the type species, _O. senckenbergiana_, as well as a closely-related sister species _O. frontifasciata_, both from North Maluku Island, Indonesia, are situated within _Oreophryne_ with high support (@fig-phylo). We propose the new clade name (NCN) _Auparoparo_ for the node descended from node B.  _Oreophryne_ is the oldest clade in the Papuan subfamily, with genera _Cophixalus_ and _Paedophryne_ arising before _Auparoparo_, which split from the remaining genera of Asterophryinae.
+Furthermore, these findings demonstrate that the clade descended from node A should retain the converted clade name (CCN) _Oreophryne_, as the type species, _O. senckenbergiana_, from North Maluku Island, Indonesia, is situated within _Oreophryne_ with high support (@fig-phylo). We propose the new clade name (NCN) _Auparoparo_ for the node descended from node B.  _Oreophryne_ is the oldest clade in the Papuan subfamily, with genera _Cophixalus_ and _Paedophryne_ arising before _Auparoparo_, which split from the remaining genera of Asterophryinae.
 
 {{< pagebreak >}}
 
@@ -175,10 +174,10 @@ knitr::include_graphics("../Results/fig2.FullTree_support_highlight.png")
 
 ## Morphology, Behavior, and Ranked Taxonomy
 
-We find no morphological synapomorphies that distinguish _Auparoparo_ from _Oreophryne_. _Oreophryne_ sensu lato is diagnosed by characters of the pectoral girdle: posessing highly reduced, curved procoracoid cartilages and clavicles, and lacking an omosternum [@Parker:1934; @Zweifel:2003]. We found that this suite of characters are present in both _Oreophryne_ and _Auparoparo_,  and therefore is not diagnostic for neither _Oreophryne_ nor _Auparoparo_ (@tbl-morph). 
+We find no morphological synapomorphies that distinguish _Auparoparo_ from _Oreophryne_. _Oreophryne_ sensu lato is diagnosed by characters of the pectoral girdle: posessing highly reduced, curved procoracoid cartilages and clavicles, and lacking an omosternum [@Parker:1934; @Zweifel:2003]. We found that this suite of characters are present in both _Oreophryne_ and _Auparoparo_,  and therefore is not diagnostic for neither _Oreophryne_ nor _Auparoparo_ (@tbl-morph).
 
 
-Two traits imperfectly segregate between the clades, toe pad widths and call type (@tbl-morph), which may assist in preliminary identification.  _Oreophryne_ is an arboreal clade with expanded digital pads of roughly equal width between the fingers and toes, whereas _Auparoparo_ have visibly larger finger pads, with finger pads roughly 20-30% wider than toes. Both _Oreophryne_ and _Auparoparo_ use a variety of call types, with "honks" or "peeps" used only by _Oreophryne_, whereas "whinny" calls are used only by arboreal _Auparoparo_. A minority of species in both groups use the "rattle" call type. Both toe pad width and call type are variable traits with some overlap and thus not reliable for diagnosis. Furthermore, toe pad is clearly an adaptive trait for arboreality. 
+Two traits imperfectly segregate between the clades, toe pad widths and call type (@tbl-morph), which may assist in preliminary identification.  _Oreophryne_ is an arboreal clade with expanded digital pads of roughly equal width between the fingers and toes, whereas _Auparoparo_ have visibly larger finger pads, with finger pads roughly 20-30% wider than toes. Both _Oreophryne_ and _Auparoparo_ use a variety of call types, with "honks" or "peeps" used only by _Oreophryne_, whereas "whinny" calls are used only by arboreal _Auparoparo_. A minority of species in both groups use the "rattle" call type. Both toe pad width and call type are variable traits with some overlap and thus not reliable for diagnosis. Furthermore, toe pad is clearly an adaptive trait for arboreality.
 
 ```{r, results="asis"}
 #| label: tbl-morph
@@ -207,15 +206,14 @@ __Subfamily Asterophryinae [@Gunther:1858 ]__
 __Genus _Oreophryne_ [@Boettger:1895] amended__  
 _Microhyla_ [@Peters:1878]  
 _Callula_  
-_Oreophryne_ [@Boettger:1895] Type species: _Oreophryne senckenbergiana_  
-[@Boettger:1895]  (= _Microhyla achatina_ var. moluccensis [@Peters:1878], by morphological monotypy.  Placed on Official List of Generic Names in Zoology by Opinion 1266, Anonymous, 1984.  
+_Oreophryne_ [@Boettger:1895] Type species: _Oreophryne senckenbergiana_ [@Boettger:1895]. (= _Microhyla achatina_ var. moluccensis [@Peters:1878], by morphological monotypy, however, this  should be verified with molecular evidence.) Placed on Official List of Generic Names in Zoology by Opinion 1266, Anonymous, 1984.     
 _Sphenophryne_  
 _Phrynixalus_  
-_Mehelyia_ [@Wandolleck:1911], Type species: _Meheylia lineata_ [@Wandolleck:1911]  (=_Sphenophryne biroi_ [@Mehely:1897], by subsequent designation of [@Parker:1934]. Synonymy by [@Nieden:1926].  
-_Cophixalus_  
-_Chaperina_  
+_Mehelyia_ [@Wandolleck:1911], Type species: _Meheylia lineata_ [@Wandolleck:1911]  (=_Sphenophryne biroi_ [@Mehely:1897], by subsequent designation of [@Parker:1934]. Synonymy by [@Nieden:1926].   
+_Cophixalus_   
+_Chaperina_   
 
-Type species _Oreophryne senckenbergiana_ [@Boettger:1895]
+Type species _Oreophryne senckenbergiana_ [@Boettger:1895]  
 
 __Diagnosis:__ We note that there are no synapomorphies in adult _Oreophryne_ that differ from the morphologically similar genus _Auparoparo_. Diagnoses should be made by molecular phylogenetic analysis, based on the phylogenetic definition below.
 
@@ -223,13 +221,13 @@ __Description:__ _Oreophryne_ differs from most other genera in subfamily Astero
 
 __Phylogenetic definition:__ _Oreophryne_ (CCN) is defined as the maximum crown-clade (the monophyletic clade descending from node A, @fig-phylo) originating with the most recent common ancestor of _Oreophryne senckenbergiana_ [@Boettger:1895], the type species of _Oreophryne_, and all extant species that share a common ancestor with _O. senckenbergiana_ more recently than they do with reference species of all the other nominal generic clades listed in @tbl-genus-types; with reference species of the closest sister clades to _Oreophryne_ currently being _Auparoparo penelopeia_ [@Kraus:2016], _Cophixalus verrucosus_ [@Boettger:1892], and _Paedophryne kathismaphlox_ [@Kraus:2010].
 
-__Content:__ Our results support the retention of 18 species in _Oreophryne_ with molecular evidence (@tbl-transfers): _Oreophryne anamiatoi_ [@Kraus:2009], _O. anulata_ [@Stejneger:1908], _Oreophryne aurora_ [@Kraus:2016], _Oreophryne biroi_ [@Mehely:1897], _Oreophryne brachypus_ [@Werner:1898], _Oreophryne cameroni_ [@Kraus:2013], _Oreophryne frontifasciata_ [@Horst:1883], _Oreophryne geislerorum_ [@Boettger:1892], _Oreophryne graminis_ [@Gunther:2012), _Oreophryne inornata_ [@Zweifel:1956], _Oreophryne lemur_ [@Kraus:2016], _Oreophryne loriae_ [@Boulenger:1898], _Oreophryne nana_ [@Brown:1967], _Oreophryne notata_ [@Zweifel:2003], _Oreophryne parkeri_ [@Loveridge:1955], _Oreophryne parkopanorum_ [@Kraus:2013], _Oreophryne philosylleptoris_ [@Kraus:2016], and _Oreophryne senckenbergiana_ [@Boettger:1895]. A number of species were not available for our study but should molecular evidence demonstrate their relationship within Oreophryne, those species should also retain their generic identity.
+__Content:__ Our results support the retention of 17 species in _Oreophryne_ with molecular evidence (@tbl-transfers): _Oreophryne anamiatoi_ [@Kraus:2009], _O. anulata_ [@Stejneger:1908], _Oreophryne aurora_ [@Kraus:2016], _Oreophryne biroi_ [@Mehely:1897], _Oreophryne brachypus_ [@Werner:1898], _Oreophryne cameroni_ [@Kraus:2013], _Oreophryne geislerorum_ [@Boettger:1892], _Oreophryne graminis_ [@Gunther:2012), _Oreophryne inornata_ [@Zweifel:1956], _Oreophryne lemur_ [@Kraus:2016], _Oreophryne loriae_ [@Boulenger:1898], _Oreophryne nana_ [@Brown:1967], _Oreophryne notata_ [@Zweifel:2003], _Oreophryne parkeri_ [@Loveridge:1955], _Oreophryne parkopanorum_ [@Kraus:2013], _Oreophryne philosylleptoris_ [@Kraus:2016], and _Oreophryne senckenbergiana_ [@Boettger:1895]. A number of species were not available for our study but should molecular evidence demonstrate their relationship within Oreophryne, those species should also retain their generic identity.
 
 __Distribution:__ The range of confirmed species in this dataset remains nearly as broad as previously defined (@fig-map), from the Philippines and Indonesia to the southeastern most tip of mainland New Guinea and several near-shore islands (Fergusson, and Normanby Is.) and the distant Rossel Island of the Louisiade Archipelago. However, the transfer of species which occupy Woodlark Islands and Misima and Sudest Islands of the Louisaide Archipelago reduces the known range of _Oreophryne_. Woodlark Island is inhabited by _O. phoebe_ [=_Auparoparo phoebe_], Misima Island is inhabited by _O. picticrus_ [=_Auparoparo picticrus_], and Sudest Island is inhabited by _O. ezra_ and _O. meliades_ [= _Auparoparo ezra_ and _Auparoparo meliades_].
 
 __Family Microhylidae [@Gunther:1858]  
 Subfamily Asterophryinae [@Gunther:1858]  
-Genus Auparoparo Nov.__  
+Genus Auparoparo gen. nov.__  
 _Oreophryne_ [@Boettger:1895]  
 _Sphenophryne_ (anthonyi) [@Boulenger:1897]  
 Type species _Oreophryne penelopeia_ [@Kraus:2016] [=_Auparoparo penelopeia_]  
@@ -266,7 +264,7 @@ Call features are increasingly used for diagnosing species of _Oreophryne_, with
 
 ## Geographic Distribution
 
-Both _Oreophryne_ and _Auparoparo_ are geographically centered in the mainland New Guinea. _Oreophryne_ extends southward to the Louisiade Archipelago and northward to the South Philippine Islands [@Hill:2023]. Addition of the type species _Oreophryne senkenbergiana_ and _O. frontifasciata_ expands the known range eastward to North Maluku, Indonesia (@fig-map).
+Both _Oreophryne_ and _Auparoparo_ are geographically centered in the mainland New Guinea. _Oreophryne_ extends southward to the Louisiade Archipelago and northward to the South Philippine Islands [@Hill:2023]. Addition of the type species _Oreophryne senkenbergiana_ expands the known range eastward to North Maluku, Indonesia (@fig-map).
 
 The known distribution of _Auparoparo_ is mainly clustered in the southeastern tip of mainland Papua New Guinea (in the East Papuan Composite Terrane) and satellite islands with two species in Sulawesi, Indonesia. This suggests the existence of yet undescribed or undiscovered species of _Auparoparo_ with intermediate localities. This geographic range is sure to grow with additional phylogenetic sampling. For example _Oreophryne_ (sensu lato) _chlorops_ [@Gunther:2023] is a very large (SVL > 40mm) species recently discovered from mid-elevation mountains of the birdʻs neck region of Western Papua with clearly enlarged finger pads relative to toe pads. If confirmed as _Auparoparo_, it would significantly expand the range across New Guinea Island.
 
@@ -283,6 +281,17 @@ Clarifying the generic structure also facilitates appreciation for the patterns 
 
 Lastly, we emphasize that future naming of species, genera, and higher classifications should always seek to recognize the language of the indigenous stewards of the land and ecosystem from which they were discovered [@Gillman:2020]. This is especially true of Asterophryinae frogs, whose awe-inspiring diversity mirrors the rich cultural beauty and historical complexity of Papuan people.
 
+# Acknowledgements 
+
+We thank Ben Evans and Iqbal Setiadi for generously providing samples critical for this study, and Ethan Hill for his guidance and training on the molecular and bioinformatics work. We are grateful to Molly Hagemann for her excellent assistance in accessing Bishop Museum Vertebrate Zoology Collections and data. We thank Neal Evenhuis for sharing expert knowledge on type species, and Brianna Correa and Alexis Shulga for providing comments which improved the manuscript. This is publication 234 from the School of Life Sciences, University of Hawaiʻi at Mānoa.  
+
+# Funding 
+
+This study was made possible by a grant from the National Science Foundation awarded to MB (DEB-1145733). We gratefully acknowledge support from the School of Life Sciences, University of Hawai’i at M ̄anoa. University of Hawaii Information Technology Services – Cyberinfrastructure resources were funded in part by a National Science Foundation Major Research Instrumentation award (CNS-1920304).
+
+# Data Availability
+
+The data underlying this article are available in  the GenBank Nucleotide Database] at <https://www.ncbi.nlm.nih.gov/genbank/> , and can be accessed with [will be provided upon publication]. The codes and datafiles needed to reproduce these results can be found at [GitHub repository] with DOI [supplied upon publication]. 
 
 
 # Supplementary Tables
