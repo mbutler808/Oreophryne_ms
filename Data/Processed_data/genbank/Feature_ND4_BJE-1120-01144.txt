@@ -1,0 +1,45 @@
+
+Feature for Sequence 'BJE01120nd4'
+     gene            <1..>486
+                     /gene="ND4"
+                     /note="NADH dehydrogenase subunit 4 (ND4) gene"
+     CDS             <1..>486
+                     /gene="ND4"
+                     /note="NADH dehydrogenase subunit 4 (ND4)"
+                     /codon_start=1
+                     /transl_table=2
+                     /product="ND4"
+                     /translation="GGYALMRFSSLLPSLFMFIAMIGILTTASLCMRQTDLKALIAMS
+                     SVSHMNLVIAATLIQTQWSYSGALIMMIAHGLISSALFCLTNMTYDRTNSRTMILLRG
+                     TTLILPLMATWWLAILLFNMSLPPSLNFYSELLIISSLFNWSPMAFLLITPSLIFTAA
+                     YT"
+
+Feature for Sequence 'BJE01143nd4'
+     gene            <1..>486
+                     /gene="ND4"
+                     /note="NADH dehydrogenase subunit 4 (ND4) gene"
+     CDS             <1..>486
+                     /gene="ND4"
+                     /note="NADH dehydrogenase subunit 4 (ND4)"
+                     /codon_start=1
+                     /transl_table=2
+                     /product="ND4"
+                     /translation="GGYALMRFSSLLPSLFMFIAMIGILTTASLCMRQTDLKALIAMS
+                     SVSHMNLVIAATLIQTQWSYSGALIMMIAHGLISSALFCLTNMTYDRTNSRTMILLRG
+                     TTLILPLMATWWLAILLFNMSLPPSLNFYSELLIISSLFNWSPMAFLLITPSLIFTAA
+                     YT"
+
+Feature for Sequence 'BJE01144nd4'
+     gene            <1..>486
+                     /gene="ND4"
+                     /note="NADH dehydrogenase subunit 4 (ND4) gene"
+     CDS             <1..>486
+                     /gene="ND4"
+                     /note="NADH dehydrogenase subunit 4 (ND4)"
+                     /codon_start=1
+                     /transl_table=2
+                     /product="ND4"
+                     /translation="GGYALMRFSSLLPSLFMFIAMIGILTTASLCMRQTDLKALIAMS
+                     SVSHMNLVIAATLIQTQWSYSGALIMMIAHGLISSALFCLTNMTYDRTNSRTMILLRG
+                     TTLILPLMATWWLAILLFNMSLPPSLNFYSELLIISSLFNWSPMAFLLITPSLIFTAA
+                     YT"

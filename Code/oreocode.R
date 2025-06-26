@@ -29,7 +29,7 @@ source("plotting_functions.R")
 ## ---- loaddata --------
 iqtree <- read.iqtree("../Data/IQTree/model_search/senkenbergiana_merge.treefile")
 # if you change the input treefile, run clean_metadata.R with the new treefile
-d <- read.csv("../Data/Processed_data/metadata.csv")      # tree metadata spreadsheet
+d <- read.csv("../Data/Raw_data/metadata.csv")      # tree metadata spreadsheet
 references <- read.csv("../Data/genus_references.csv")    # genus reference taxa 
 references$id <- gsub("_(.*)","", references)
 gc <- read.csv("../Data/gencolorABC.csv")    # color codes by genus

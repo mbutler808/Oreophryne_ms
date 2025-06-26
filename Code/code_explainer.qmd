@@ -1,0 +1,128 @@
+---
+title: "An explanation of the code used for the Auparoparo Oreophryne taxonomy manuscript"
+author: "Marguerite Butler"
+date: "2025-05-26"
+output: html_document
+---
+
+### Acknowledgements
+
+Many thanks to David Wachsmuth for his [beautiful blog post](https://upgo.lab.mcgill.ca/2019/12/13/making-beautiful-maps/) that explains spatial data _so well_, along with how to make beautiful inset maps using `sf`, `ggplot2`, and `cowplot`. I ended up using `grid`ʻs `viewport`, but `cowplot` is great too. 
+
+# The code in this repository produces a map and a phylogeny
+
+The map provides the complete range for all known _Oreophryne_ sensu lato species, covering Papua New Guinea, Indonesia, and the Philippines. 
+
+The phylogeny shows where the clades `Auparoparo` and `Oreophryne` fall within the subfamily Asterophryinae, along with support values at the nodes. 
+
+All scripts should be run starting from the `Code` directory. 
+
+```{r, include=FALSE, cache=FALSE}
+knitr::read_chunk('maps.R')
+```
+
+# MAP
+
+## Setup for the mapping
+
+The mapping script is in `maps.R`. Load the needed packages. `dplyr` is for data manipulation, `ggplot2` and `grid` are for plotting, and the remaining are map packages. The `sf` package is for mapping sf shape data, `ggspatial` adds annotations, and `rnaturalearth` provides the map data for countries. 
+
+`sf` data refers to "simple features" data format, which is a standard for storing spatial data (i.e., representations of maps) together with non-spatial data (metadata). Read more about that [here](https://cran.r-project.org/web/packages/flexpolyline/vignettes/sf-support.html). 
+
+```{r, packages}
+#| message: FALSE
+#| warning: FALSE
+```
+
+### Load IUCN redlist data, our metadata, save as sf
+
+The [IUCN redlist](https://www.iucnredlist.org/) contains known ranges for species. We downloaded all _Oreophryne_ sensu lato data as shape files. We had to download the entire subfamily (Asterophryinae), which is quite a large shapefile, covert to dataframe, filter by genus, and convert back to shapefile. The filtered dataset is what we save for this repository, saved as `oreophryne_sensu_lato.rds`. 
+
+```{r, shapedata}
+```
+
+Read in the metadata (a spreadsheet), some light filtering, and save as an _sf dataset. 
+
+```{r, metadata}
+```
+
+### Point aesthetics
+
+Choosing the colors and shapes for the points. (I left in a color palette that I found from a [wonderful blog post](https://upgo.lab.mcgill.ca/2019/12/13/making-beautiful-maps/) because itʻs pretty.)
+
+```{r, pointspec}
+```
+### Define the viewport for the inset
+
+The x and y limits for the map in Latitude and Longitude are set here. We will be zooming in with an inset with the limits specified here. 
+
+We use the `viewport()` function from package `grid` to define a picture-in-picture region where a second plot can be plotted into. x and y specify the location of the viewport on the basemap (between 0 and 1). 
+
+```{r, maplimitsinset}
+```
+
+## Creating the basemap 
+
+We get the basemap from the `rnaturalearth` package, by specifying the country names and then zeroing in on the region of interest by specifying the latitude and longitude limits of the map. 
+
+We set the water color to a pleasing light blue, and choose a light grey for the species range data so that it will have a good contrast with the white area (lacking _Oreophryne_ species, as far as we know), and the points that represent our specimens on the map. 
+
+The function `make_basemap()` maps the correct region of the earth, sets our color scheme, and overlays the species distribution data as grey polygons. 
+
+Note that the function is __pipeable__ with the map data piped into the function. This is specified by placing a "." in front of the map data ".map". All of the map functions will follow this convention so that we can pass the map data and string the functions together. 
+
+```{r, map}
+```
+
+
+### Overlaying points on the basemap 
+
+The grouping variable to indicate point aesthetics is `genus` from the `metadata`, along with the longitude and latitude for each point. The specific values for shape, fill, and size are mapped by the `scales_..._manual` in `geom_point` (we chose these values earlier).
+
+The `map_points()` function adds the points and a legend to the map. We specify the placement of the legend in the lower left corner of the map. 
+
+```{r, pointmap}
+```
+
+### Annotate the map
+
+We can easily add a scale bar and north arrow using these handy functions from `ggspatial`.  
+
+The second function, `zoom_box()`, draws a rectangle around the region we will zoom in on for the inset.
+
+```{r, annotatedmap}
+```
+
+We can then easily create the basemap starting from the `map_sf` shapefile and piping the functions together. We save this object to write to file later.  
+
+```{r, savebasemap}
+#| message: FALSE
+#| warning: FALSE
+```
+
+### Inset map
+
+Making the inset map is then just a matter of reusing the functions to plot the same map with smaller map limits. We also tweak some of the options to make it look pretty, such as dropping the legend, integer y-limits, thicker white zoom box line, and smaller expansion around the map area. 
+
+```{r, insetmap}
+#| message: FALSE
+#| warning: FALSE
+```
+
+### Putting the map together
+
+The basemap and the inset map are now two map objects, so all we have to do is print the basemap first and the inset over it, while specifying to plot it in the `viewport`. 
+
+```{r, printmap}
+#| message: FALSE
+#| warning: FALSE
+```
+
+### Write map to file
+
+The final map is written to the `Results` directory as `fig3.map-dot.pdf` or `.png`.
+
+```{r, writemap}
+#| message: FALSE
+#| warning: FALSE
+```

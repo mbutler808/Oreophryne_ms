@@ -1,0 +1,107 @@
+Feature for Sequence 'BJE01120nxc'
+     gene            <1..>525
+                     /gene="NXC"
+                     /note="Sodium Calcium Exchange subunit-1 (NXC-1) gene"
+     CDS             <1..>525
+                     /gene="NXC"
+                     /note="Sodium Calcium Exchange subunit-1 (NXC-1)"
+                     /codon_start=1
+                     /product="NXC"
+                     /translation="RRIKHLRVFFVTAAWSIFAYTWLYMILSVFSPGVVEVWESLLTF
+                     FFFPICVVFAWVADRRLLFYKYVYKRYRAGKQRGMIIETEGDRPSSKADIEMDGKVLN
+                     SHTENFLDGSLVLEVDEKDQDDEEARRDMARILKELKQKHPEKEMEQLIELANYQVLS
+                     QQQKSRAFYRIXATR"
+
+Feature for Sequence 'BJE01143nxc'
+     gene            <1..>527
+                     /gene="NXC"
+                     /note="Sodium Calcium Exchange subunit-1 (NXC-1) gene"
+     CDS             <1..>527
+                     /gene="NXC"
+                     /note="Sodium Calcium Exchange subunit-1 (NXC-1)"
+                     /codon_start=1
+                     /product="NXC"
+                     /translation="RRIKHLRVFFVTAAWSIFAYTWLYMILSVFSPGVVEVWESLLTF
+                     FFFPICVVFAWVADRRLLFYKYVYKRYRAGKQRGMIIETEGDRPSSKADIEMDGKVLN
+                     SHTENFLDGSLVLEVDEKDQDDEEARRDMARILKELKQKHPEKEMEQLIELANYQVLS
+                     QQQKSRAFYRIXATRL"
+
+Feature for Sequence 'BJE01144nxc'
+     gene            <1..>528
+                     /gene="NXC"
+                     /note="Sodium Calcium Exchange subunit-1 (NXC-1) gene"
+     CDS             <1..>528
+                     /gene="NXC"
+                     /note="Sodium Calcium Exchange subunit-1 (NXC-1)"
+                     /codon_start=1
+                     /product="NXC"
+                     /translation="RRIKHLRVFFVTAAWSIFAYTWLYMILSVFSPGVVEVWESLLTF
+                     FFFPICVVFAWVADRRLLFYKYVYKRYRAGKQRGMIIETEGDRPSSKADIEMDGKVLN
+                     SHTENFLDGSLVLEVDEKDQDDEEARRDMARILKELKQKHPEKEMEQLIELANYQVLS
+                     QQQKSRAXYRIQATRL"
+
+Feature for Sequence 'BJE01248nxc'
+     gene            <1..>527
+                     /gene="NXC"
+                     /note="Sodium Calcium Exchange subunit-1 (NXC-1) gene"
+     CDS             <1..>527
+                     /gene="NXC"
+                     /note="Sodium Calcium Exchange subunit-1 (NXC-1)"
+                     /codon_start=1
+                     /product="NXC"
+                     /translation="RRIKHLRVFFVTAAWSIFAYTWLYMILSVFSPGVVEVWESLLTF
+                     FFFPICVVFAWVADRRLLFYKYVYKRYRAGKQRGMIIETEGDRPSSKADIEMDGKVLN
+                     SHTENFLDGSLVLEVDEKDQDDEEARRDMARILKELKQKHPEKEMEQLIELANYQVLS
+                     QQQKSRAFYRIXATRL"
+
+Feature for Sequence 'BJE01120sia'
+     gene            <1..>407
+                     /gene="SIA"
+                     /note="SIA Seventh in Absentia (SIA) gene"
+     CDS             <1..>407
+                     /gene="SIA"
+                     /note="SIA Seventh in Absentia (SIA)"
+                     /codon_start=1
+                     /product="SIA"
+                     /translation="YVLPPILQCQSGHLVCSNCRPKLTCCPTCRGPLGSIRNLAMEKV
+                     ANSVLFPCKYASSGCEVTLPHTEKADHEELCEFRPYSCPCPGASCKWQGSLDAVMPHL
+                     MHQHKSITTLQGEDIVFLATDINLPGAVDWVMM"
+
+Feature for Sequence 'BJE01143sia'
+     gene            <1..>407
+                     /gene="SIA"
+                     /note="SIA Seventh in Absentia (SIA) gene"
+     CDS             <1..>407
+                     /gene="SIA"
+                     /note="SIA Seventh in Absentia (SIA)"
+                     /codon_start=1
+                     /product="SIA"
+                     /translation="YVLPPILQCQSGHLVCSNCRPKLTCCPTCRGPLGSIRNLAMEKV
+                     ANSVLFPCKYASSGCEVTLPHTEKADHEELCEFRPYSCPCPGASCKWQGSLDAVMPHL
+                     MHQHKSITTLQGEDIVFLATDINLPGAVDWVMM"
+
+Feature for Sequence 'BJE01144sia'
+     gene            <1..>407
+                     /gene="SIA"
+                     /note="SIA Seventh in Absentia (SIA) gene"
+     CDS             <1..>407
+                     /gene="SIA"
+                     /note="SIA Seventh in Absentia (SIA)"
+                     /codon_start=1
+                     /product="SIA"
+                     /translation="YVLPPILQCQSGHLVCSNCRPKLTCCPTCRGPLGSIRNLAMEKV
+                     ANSVLFPCKYASSGCEVTLPHTEKADHEELCEFRPYSCPCPGASCKWQGSLDAVMPHL
+                     MHQHKSITTLQGEDIVFLATDINLPGAVDWVMM"
+
+Feature for Sequence 'BJE01248sia'
+     gene            <1..>407
+                     /gene="SIA"
+                     /note="SIA Seventh in Absentia (SIA) gene"
+     CDS             <1..>407
+                     /gene="SIA"
+                     /note="SIA Seventh in Absentia (SIA)"
+                     /codon_start=1
+                     /product="SIA"
+                     /translation="YVLPPILQCQSGHLVCSNCRPKLTCCPTCRGPLGSIRNLAMEKV
+                     ANSVLFPCKYASSGCEVTLPHTEKADHEELCEFRPYSCPCPGASCKWQGSLDAVMPHL
+                     MHQHKSITTLQGEDIVFLATDINLPGAVDWVMM"

@@ -1,0 +1,44 @@
+Feature for Sequence 'BJE01120'
+     gene            <1..>510
+                     /gene="CYTB"
+                     /note="Cytochrome oxidase b (CYTB) gene"
+     CDS             <1..>510
+                     /gene="CYTB"
+                     /note="Cytochrome oxidase b (CYTB)"
+                     /codon_start=1
+                     /transl_table=2
+                     /product="CYTB"
+                     /translation="NGASFFFICIYLHIGRGLYYGSYLFKETWNTGITIFIMLMATAF
+                     VGYVLPWGQMSFWGATVITNLLSAIPYFGINLVEWLWGGFSVDSPTLTRFFTFHFLLP
+                     FIMTALTMTHLLSLHQTGSSNPTGLNPDHDKISFHTYFLIKDILGFMIAFSAVFILST
+                     LFPTFLGDPD"
+
+Feature for Sequence 'BJE01143'
+     gene            <1..>510
+                     /gene="CYTB"
+                     /note="Cytochrome oxidase b (CYTB) gene"
+     CDS             <1..>510
+                     /gene="CYTB"
+                     /note="Cytochrome oxidase b (CYTB)"
+                     /codon_start=1
+                     /transl_table=2
+                     /product="CYTB"
+                     /translation="NGASFFFICIYLHIGRGLYYGSYLFKETWNTGITIFIMLMATAF
+                     VGYVLPWGQMSFWGATVITNLLSAIPYFGINLVEWLWGGFSVDSPTLTRFFTFHFLLP
+                     FIMTALTMTHLLSLHQTGSSNPTGLNPDHDKISFHTYFLIKDILGFMIAFSAVFILST
+                     LFPTFLGDPD"
+
+Feature for Sequence 'BJE01144'
+     gene            <1..>510
+                     /gene="CYTB"
+                     /note="Cytochrome oxidase b (CYTB) gene"
+     CDS             <1..>510
+                     /gene="CYTB"
+                     /note="Cytochrome oxidase b (CYTB)"
+                     /codon_start=1
+                     /transl_table=2
+                     /product="CYTB"
+                     /translation="NGASFFFICIYLHIGRGLYYGSYLFKETWNTGITIFIMLMATAF
+                     VGYVLPWGQMSFWGATVITNLLSAIPYFGINLVEWLWGGFSVDSPTLTRFFTFHFLLP
+                     FIMTALTMTHLLSLHQTGSSNPTGLNPDHDKISFHTYFLIKDILGFMIAFSAVFILST
+                     LFPTFLGDPD"

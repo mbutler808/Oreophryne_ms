@@ -1,0 +1,55 @@
+Feature for Sequence 'BJE01120'
+     gene            <1..>517
+                     /gene="BDNF"
+                     /note="Brain Derived Neurotrophic Factor (BDNF) gene"
+     CDS             <1..>517
+                     /gene="BDNF"
+                     /note="Brain Derived Neurotrophic Factor (BDNF)"
+                     /codon_start=2
+                     /product="BDNF"
+                     /translation="LRTHGTLENIGGPIGGSRGGGLPSLTDTFEHVIEELLEEEQTIR
+                     QSEENKDSDMYSSRVMLSTQVPLEPPLLFLLEEYKNYLDAANMSMRVRRHSDPARRGE
+                     LSVCDSISEWVTAADKKTAVDMAGQTVTVLEKVPVPKGQLKQYFYETKCNPMGYMKEG
+                     CRGIDKRYWNSQ"
+
+Feature for Sequence 'BJE01143'
+     gene            <1..>517
+                     /gene="BDNF"
+                     /note="Brain Derived Neurotrophic Factor (BDNF) gene"
+     CDS             <1..>517
+                     /gene="BDNF"
+                     /note="Brain Derived Neurotrophic Factor (BDNF)"
+                     /codon_start=2
+                     /product="BDNF"
+                     /translation="LRTHGTLENIGGPIGGSRGGGLPSLTDTFEHVIEELLEEEQTIR
+                     QSEENKDSDMYSSRVMLSTQVPLEPPLLFLLEEYKNYLDAANMSMRVRRHSDPARRGE
+                     LSVCDSISEWVTAADKKTAVDMAGQTVTVLEKVPVPKGQLKQYFYETKCNPMGYMKEG
+                     CRGIDKRYWNSQ"
+
+Feature for Sequence 'BJE01144'
+     gene            <1..>517
+                     /gene="BDNF"
+                     /note="Brain Derived Neurotrophic Factor (BDNF) gene"
+     CDS             <1..>517
+                     /gene="BDNF"
+                     /note="Brain Derived Neurotrophic Factor (BDNF)"
+                     /codon_start=2
+                     /product="BDNF"
+                     /translation="LRTHGTLENIGGPIGGSRGGGLPSLTDTFEHVIEELLEEEQTIR
+                     QSEENKDSDMYSSRVMLSTQVPLEPPLLFLLEEYKNYLDAANMSMRVRRHSDPARRGE
+                     LSVCDSISEWVTAADKKTAVDMAGQTVTVLEKVPVPKGQLKQYFYETKCNPMGYMKEG
+                     CRGIDKRYWNSQ"
+
+Feature for Sequence 'BJE01248'
+     gene            <1..>517
+                     /gene="BDNF"
+                     /note="Brain Derived Neurotrophic Factor (BDNF) gene"
+     CDS             <1..>517
+                     /gene="BDNF"
+                     /note="Brain Derived Neurotrophic Factor (BDNF)"
+                     /codon_start=2
+                     /product="BDNF"
+                     /translation="LRTHGTLENIGGPIGGSRGGGLPSLTDTFEHVIEELLEEEQTIR
+                     QSEENKDSDMYSSRVMLSTQVPLEPPLLFLLEEYKNYLDAANMSMRVRRHSDPARRGE
+                     LSVCDSISEWVTAADKKTAVDMAGQTVTVLEKVPVPKGQLKQYFYETKCNPMGYMKEG
+                     CRGIDKRYWNSQ"
