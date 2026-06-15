@@ -1,0 +1,671 @@
+Page: 2
+
+Pg. 2. 8. "Since morphological comparison is a critical first step in choosing which taxa
+to include in a molecular phylogeny for a new species, polyphyly can be challenging to identify"
+
+I'm not sure I follow the reasoning here. As long as several disparate species from the polyphyletic genus were included in the analysis, the molecular phylogeny should reveal the polyphyly.
+
+> Clearly our message is not set up effectively at the start. We have rewritten the abstract. 
+> added to the previous sentence " especially when they [cryptic genera] are portions of unrecognized polyphyletic taxa."
+
+> The taxa included Morphological diagnosis 
+
+> Outgroup problem with cryptic polyphyly. 
+
+> Appropriate outgroups may not be included (or may not seem necessary to include) if morphological similarity is convincing enough to suggest all included species could be monophyletic. 
+
+
+Pg. 2. 15. They're never unrelated. I think relevant the point is that they are not sister taxa.
+
+> Say earlier "Surprisingly there are long-standing groups that contain unrecognized polyphyly because they are morphologically undiagnosable…. When this occurs, there is no reason to suspect that outgroups needed to identify the two or more monophyletic clades. Studies may contain an "outgroup" which is external to all species, but it does nothing to identify the internal monophyletic structure.  "
+
+Pg.2 10 This phrase seems over used.  It would be most useful in contrasting two senses in which the name is used, but that doesn't really become important until the phylogeny is presented.  I suggest initially saying "Oreophryne as currently recognized" and then leaving out all qualifiers until the phylogeny is presented and the broad and strict senses become important to distinguish.
+
+Agree
+
+Pg. 2 20 Not sure what is meant by "phylogenetic taxonomy" here, but if it is phylogenetic nomenclature, then there is a bit of a contradiction given that the approach is independent of ranks. Perhaps replace "genera" with "clades".
+
+Pg. 2 36 It would be useful to clarify whether you are talking about groups that are known to be polyphyletic versus ones whose polyphyly has not yet been revealed.
+
+Page 3
+
+Pg. 3 11 This phrase seems over used. It would be most useful in contrasting two senses in which the name is used, but that doesn't really become important until the phylogeny is presented. I suggest initially saying "Oreophryne as currently recognized" and then leaving out all qualifiers until the phylogeny is presented and the broad and strict senses become important to distinguish.
+
+> Thank you, we agree. 
+
+Pg. 3 24 This might read better if reworded: "... forest, although there is a small group of diminutive, high-elevation, grassland species, a few of which are terrestrial ..."
+
+> Done. Thank you
+
+Pg. 3 41 Delete to eliminate redundancy (or retain and delete previous "appeared").
+
+> Done. Thank you
+
+assigned to
+
+> Thank you
+
+Page 4
+
+Presumably all proposed species would be diagnosed, so I think it would be more appropriate to describe the species in question as "currently recognized".
+
+> yes, changed as suggested
+
+Unclear. Do you mean that they inhabit oceanic islands west of New Guinea?
+
+> Yes, and they are far away. Changed to "to distant oceanic islands"
+
+But it's more than this, because two reciprocally monophyletic groups could be sister groups, in which case no taxonomic change would be needed. The important point is that they are two reciprocally monophyetic groups that are not sister groups.
+
+> Two reciprocally monophyletic groups that are not sisters (figure reference). 
+
+This seems a bit unclear. Are you talking about a single definition of Oreophryne or separate definitions for the two clades?
+
+> added "for each clade"
+
+Page 5
+
+for evolutionary studies?
+
+> changed, thank you.
+
+Odd construction. proposing a new taxonomy?
+
+> yes, changed, thank you.
+
+Not clear why this would be sensu lato given that only a single species was included in the genus as originally proposed. I suggest deleting this phrase.
+
+> deleted, thank you.
+
+Add comma after.
+
+> yes, oxford comma added. 
+
+This needs to be clarified as it does not refer to evidence of monophyly. It seems to mean that the members are morphologically similar.
+
+> changed to morphologically similar. 
+
+More importantly, they are not sister clades.
+
+> yes, I added this but I wish there was a less wordy way to say this. 
+
+Page 6 
+
+Oreophryne species
+
+Italicize.
+
+This term is not specific enough. Do you mean species?
+
+Oreophryne species?
+
+species?
+
+Italicize.
+
+Not clear what this means. Data sampling is never complete. Complete genomes? Or do you mean that there
+was no missing data for the genes sampled?
+
+> Changed to "(with data complete for all sampled loci)"
+
+currently recognized genera
+
+> yes thank you
+
+
+Page 7 
+
+Please explain why they should be confirmed with new material.
+
+
+Page 8
+
+Why is this text underlined and blue? And what does "2" refer to? Table 2?
+
+> Yes this is table 2, apologies this is a software crash it is supposed to be a hyper link.
+
+Are you talking about all of the clades, just the two Oreophryne clades, or only one of the Oreophryne clades?
+
+> Thank you, corrected to indicate the two Oreophryne clades. 
+
+Odd citation. The author is said to be the International Commission on Zoological Nomenclature.
+
+> Fixed
+
+Throughout, the "d" should be lower case in this surname.
+
+> Apologies, these were bibliographical software issues which have been corrected. 
+
+This seems vague. Please specify "expert in the indigenous languages of xxx".
+
+> This phrase was removed and edited
+
+Page 9
+
+It seems that you should also have tested a codon-only partition scheme.
+In addition, you should probably specify which models were used for each partition, even if only in the Supplementary Materials.
+
+> We include a citation to a previous paper that explored model partitioning more thoroughly on the majority of this dataset.  
+
+> Models for each partition are now provided in supplementary materials.  
+
+Model 1: TVMe+R3 for SIA position 1,2, BNDF position 2,3, NXC position 1
+
+Model 2: TN+F+I+R3 for SIA position 3
+Model 3: TNe+R4 for BDNF psoition 1, NXC position 3
+Model 4: GTR+F+R3 for NXC position 2
+Model 5: TPM2+I+G4 for CYTB position 1
+Model 6: GTR+F+I+G4 for CYTB position 2
+Model 7: TIM2+F+ASC+R3 for CYTB position 3
+Model 8: TIM2+F+I+G4 for ND4 position 1
+Model 9: GTR+F+I+G4 for ND4 position 2
+Model 10: TN+F+ASC+R4 for ND4 position 3
+
+
+charpartition mymodels =
+    TVMe{3.09099,7.24083,9.4943,1.20257}+FQ+R3{0.952385,0.243915,0.0339455,8.2633,0.0136697,35.6408}: sia_pos1_sia_pos2_bdnf_pos2_bdnf_pos3_nxc_pos1{0.320996},
+    TN{10.8222,6.88002}+F{0.141639,0.368954,0.287973,0.201434}+I{0.238017}+R3{0.539177,0.392772,0.136264,2.25874,0.0865415,5.55156}: sia_pos3{4.99958},
+    TNe{5.62922,7.86521}+FQ+R4{0.557716,0.178293,0.325601,1.30012,0.0829734,3.10059,0.0337097,6.52558}: bdnf_pos1_nxc_pos3{2.59315},
+    GTR{1.96735,34.2441,0.997106,13.2811,9.83651}+F{0.33864,0.162281,0.170208,0.328872}+R3{0.951012,0.1149,0.0381744,6.13428,0.0108134,60.7171}: nxc_pos2{0.800304},
+    TPM2{3.30116,21.1492}+FQ+I{0.401189}+G4{0.793248}: cyb_pos1{10.8458},
+    GTR{10.7109,31.4924,11.2429,21.3662,100}+F{0.199854,0.257954,0.146523,0.39567}+I{0.502168}+G4{0.779467}: cyb_pos2{3.72572},
+    TIM2{0.301306,11.5356,3.86658}+F{0.304656,0.381731,0.046174,0.267439}+ASC+R3{0.49057,0.596847,0.455259,1.14048,0.0541712,3.47028}: cyb_pos3{88.9065},
+    TIM2{3.32826,16.2529,23.7467}+F{0.338312,0.221606,0.218106,0.221977}+I{0.215412}+G4{0.786278}: nd4_pos1{17.1794},
+    GTR{6.39256,10.8525,7.42121,5.94987,21.5144}+F{0.126099,0.302752,0.133535,0.437614}+I{0.262736}+G4{0.485578}: nd4_pos2{5.36781},
+    TN{28.1366,10.8144}+F{0.342967,0.32314,0.0522921,0.2816}+ASC+R4{0.0757501,0.306442,0.495596,0.697256,0.348022,1.21309,0.0806313,2.59264}: nd4_pos3{90.9402};
+
+I don't follow this. Do you mean "that share a more recent common ancestor with that species then they do ..."
+
+> Yes, edited to state "specifically, the largest crown clade originating with the most recent common ancestor of the reference species for the clade (e.g., the type species of the genus), and all extant species that share a more recent common ancestor with that reference species then they do with reference species of other clades (i.e., in this study, type species of other genera or their proxies)"
+
+Page 10 
+
+(Yu, 2020)?
+
+> Thank you, fixed. 
+
+that are not sister groups.
+
+> Thank you
+
+Page 12
+
+"name" would be sufficient here as the same conclusion applies under traditional nomenclature.
+
+> OK
+
+Again "name" is sufficient here.
+
+> OK
+
+Unless you are going to do a divergence time analysis and distinguish between crown and total clades, it might be better to say "Oreophryne is the earliest diverging genus-level clade ..." (Also, a clade is never older than its sister clade.)
+
+> Thank you for the suggestion, which we used.
+
+is 
+
+> OK
+
+Too many negatives in this sentence; this one should be deleted.
+
+> OK we kept not diagnostic and changed to either/or. 
+
+Is this also true for Auparoparo or do they differ with regard to habitat use?
+
+> Thank you, we clarified that both are arboreal and simplified the toe pad comparison.
+
+Page 12
+
+Does this mean that only some species are arboreal or is arboreality characteristic of all members of the clade?
+
+> Deleted "arboreal" -- all species are arboreal as far as known.
+
+OK, but how does this relate to its use in distinguishing members of the two clades? Are you suggesting that it is prone to homoplasy? And should it be "wide toe pads"?
+
+> Yes, prone to homoplasy. 
+
+consider rewording as "not unambiguously diagnostic".
+
+> OK
+
+I don't see the phylogenetic relationships (other than the two clades), nor was I able to find the legend for Figure 3.  In addition, a verbal description of the distribution patterns would be useful here.
+
+> Apologies for these oversights. We clarified that the points represent species included in our molecular phylogeny. The phylogeny-map overlay is messy so we did not include it. We added back a verbal description to the main text that was cut, and have added back our caption that went missing.
+
+definitions
+
+> OK
+
+Phrase seems odd. "following the methods of the PhyloCode"?
+
+> Thank you, yes following the methods of phylogenetic nomenclature. 
+
+It think it would be clearer to reword this as "we adopt phylogenetic definitions of these genera that explicitly identify them as clades." [Use either "monophyletic group" or "clade" but not the redundant "monophyletic clade".]
+
+> Thank you
+
+These three publications laid the theoretical foundation for the PhyloCode, but they aren't appropriate citations for the PhyloCode itself. Therefore, I suggest either retaining the citations and replacing "the PhyloCode" with "phylogenetic nomenclature" or retaining "the PhyloCode" and replacing the citations with "(Cantino and de Queiroz 2020)".
+
+> We chose phylogenetic nomenclature
+
+I think it would more accurate to state this as "we define each genus to include all descendants of the most recent common ancestor of the type species and all other extant species that are more closely related to it than to the type species of the other asterophryine genera recognized here."
+
+> Thank you, this is very helpful
+
+You should probably cite a reference for this statement.
+
+> Look for citation 
+
+Page 13
+
+See previous comment.
+
+This citation doesn't seem appropriate as the terminology in question is that used in the PhyloCode. Brown et al. (2015) were presumably following an early version of the PhyloCode.
+
+> Good point, it has been removed. Brown et al were attempting to follow both codes in that Brown et al. (2015). 
+
+Italicize.
+
+pg 13. 16. [Throughout] I'm not sure what are the conventions of the BJLS, but in the PhyloCode, authors of names (as well as the publication dates) are cited not using parentheses: "Microhylidae Günther 1858." It also recommends italicizing all scientific names (even those traditionally associated with ranks higher than genus), although the BJLS may again follow a different convention.
+
+> Thank you, corrected as suggested. 
+
+Pg. 13 line 25 in relation to the Callula entry: Here and below: It's unclear why authors are cited for some synonyms (if that's what these names are) but not others. In addition, I would think that at least some of the older synonyms are "in part" synonyms in that they included species now assigned to Oreophryne as well as species now assigned to other genera.
+
+> Thank you, corrected as follows:
+Callula (Horst 1883)
+Sphenophryne in part (Méhely 1897)
+Phrynixalus (Stejneger 1908)
+Cophixalus in part (Boettger 1892)
+Chaperina in part (Taylor 1920)
+
+
+Pg. 13 27 Throughout the manuscript, O. senckenbergiana is treated as though it is the current name of the species. However, the synonymy given on the next line suggests that the current name should be O. moluccensis, and that is corroborated by the entries for both Oreophryne and O. moluccensis in Amphibian Species of the World. It's OK to use senckenbergiana here given its use by Boettger in proposing Oreophryne, but the current name should be used in most other places in the text.
+
+> OK [[We have not been able to verify that O. moluccensis is the same species as O. senekenbergiana, and therefore we do not know if they are synonyms. O. moluccensis and O. senkenbergiana were described from different islands. We have no genetic material from O. moluccensis but based on other species, frogs from different islands are different species.]]
+
+Pg. 13 29 It's not clear what is meant by "morphological monotypy". A type species is considered to have been designated by monotypy if the author who proposed the genus explicitly included only a single species at the time of the proposal. Even if that species is later found to be more than one species (whether by morphological or molecular evidence), the designation would still be considered to be "by monotypy". Thus, I suggest deleting everything highlighted here except "by monotypy".
+
+> [[Need to check]]
+
+Pg. 13 45 Should be "Nieden (1926)."
+
+> OK
+
+Pg. 14
+
+Pg. 14 8 This has already been stated in the entry for Oreophryne and is not needed here.
+
+> OK, deleted.
+
+Pg. 14 19 It seems odd to include this material as a separate "Description" section.  The way it is stated, it is a diagnosis that serves to distinguish members of Oreophryne from those of all other Asterophryinae genera except Auparoparo.  I suggest removing the heading and including the material in the Diagnosis section.
+
+> OK, edited as recommended. It seemed odd to write a diagnosis that was not unambiguously "diagnostic" to genus which was why we put it in a Description section. However, we accept your recommendation and deleted the header and combined with Diagnosis as recommended. 
+
+Pg 14 33 reverse order?
+
+> OK
+
+Pg 14 45 To satisfy the PhyloCode, you should probably repeat the author/date citation for the name without using parentheses:  "Oreophryne Boettger 1895".
+
+> OK
+
+Pg 14 45 Spell Out
+
+> OK 
+
+Pg. 14 15 I think it would be better to spell this out here
+
+> OK
+
+Pg. 14 45 For clarity, I think it would be better to restate this as either:
+"the crown clade originating in the most recent common ancestor of Oreophryne senckenbergiana Boettger 1895 and all extant species that share a more recent common ancestor with O. senckenbergiana than they do with the type species of the other genus-ranked clades listed in Table 4." [no need to repeat the information about the type species.]
+Or
+"the largest crown clade including Oreophryne senckenbergiana Boettger 1895 and excluding the type species of the other genus-ranked clades listed in Table 4.
+[But see comments on the current name of the species.]
+
+> Thank you, we followed the second recommendation.
+
+
+Page 15
+
+Pg. 15 8 This material is unnecessary and is potentially misleading in that the closest sister clades to Oreophryne are ALL of the other genera of Asterophryinae (given that Oreophryne is sister to a clade composed of all the others).
+
+> True, OK followed your suggestion and deleted the list. 
+
+Pg. 15 15 Consider replacing with "Composition". A genus is not a vessel that contains species as much as it is a clade that is composed of species.
+
+> Agreed.
+
+Pg. 15 18 Citations for all 17 species are similar in placing the author/date within parentheses. Depending on the conventions followed by the BJLS, authors/dates for species are commonly cited without parentheses if the cited author included the species in the current genus and are cited within parentheses if the cited author included the species in a different genus (as would be correct for Stejneger 1908 who recognized the species as Phrynixalus annulatus).
+
+> OK thank you
+
+Pg. 15 20 Following the example of the previous species, Oreophryne could probably be abbreviated to O. for all of the species other than the first listed.
+
+> Done.
+
+Pg. 15 42 You should probably add "Oreophryne" before "species".
+
+> Yes.
+
+Page 16 
+
+Pg. 16 4. The Map (Fig. 3) suggests that Sulawesi should be added to this list.
+
+> Only _Auparoparo_ is found in Sulawesi. 
+
+Pg. 16 13-16 The repetition of these taxon names seems unnecessary.
+
+> OK 
+
+Pg. 16 20 Again, some of these synonyms would seem to be "in part".
+
+> OK 
+
+Pg. 16 28 I suggest rewording as "Currently, there are no known ...."
+
+> OK, changed as suggested 
+
+Pg. 16 It seems odd to include this material as a separate "Description" section. The way it is stated, it is a diagnosis that serves to distinguish members of Auparoparo from those of all other Asterophryinae genera except Oreophryne. I suggest removing the heading and including the material in the Diagnosis section.
+
+> Done as suggested. 
+
+Space missing
+
+page 17
+
+Pg. 17 13 Better to spell out here
+
+> OK 
+
+Pg. 17 For clarity, I think it would be better to restate this as either:
+"is defined as the crown clade originating in the most recent common ancestor of Auparoparo penelopia (Kraus 2016) and all extant species that share a more recent common ancestor with A. penepelopia than they do with the type species of the other genus-ranked clades listed in Table 4." [no need to repeat the information about the type species.]
+Or
+"the largest crown clade including Auparoparo penelopia (Kraus 2016) and excluding the type species of the other genus-ranked clades listed in Table 4.
+
+> OK 
+
+Pg. 17 This material is unnecessary and is misleading in that the closest sister clades to Auparoparo are NOT Oreophryne, Cophixalus, and Paedophryne but all of the other genera of Asterophryinae (those above Auparoparo in Figure 2).
+
+> OK 
+
+Pg. 17 Consider changing to "Composition" for the reason mentioned earlier
+
+> OK 
+
+Pg. 17 After the first listed species, the name Auparoparo could be abbreviated to A. in the species names.
+
+> OK 
+
+Pg. 17 In this list of 11 species it's appropriate to cite all authors/dates within parentheses given that the species were not previously placed in the genus Auparoparo.
+
+> Thank you. Done. 
+
+Pg. 17 39 Why no author citation?
+
+> This was an error, O. nana remains in Oreophryne. 
+
+Page 18
+
+Pg. 18 24 Important to mention that they are not sister clades.
+
+> Thank you
+
+Pg. 18 26 I don't remember seeing anything about a divergence-time analysis in the Methods. Details should either be included in the methods or a different study should be cited.
+
+> Thank you we will cite Hill et al 2022, and have slightly rewritten it.
+
+Pg. 18 33 Consider adding "a clade composted of".
+
+> Thank you, adopted. 
+
+Pg. 18 35 I suggest replacing with "non-sister". They are related as members of the clade Asterophryinae.
+
+> Thank you. 
+
+Pg. 18 35 The meaning here is a bit obscure. Perhaps restate as "which contains no known species that are the types of any previously proposed genera.
+
+> We rearranged this paragraph to reduce repetition and used your suggested phrasing. Thank you.
+
+Page 19
+
+Pg. 19 3 I suggest replacing with "the present".
+
+> OK 
+
+Pg. 19 10 Too many negatives. I suggest "... found morphological synapomorphies for neither Auparoparo nor Orenopryne, ..."
+
+> Good suggestion. 
+
+Pg. 19 16 Suggest replacing with "for assigning species to".
+
+> Thank you. 
+
+Pg. 19 20 Confusingly stated. If it is a symplesiomorphy, then it would be conserved in the two taxa. I suggest replacing with "Our phylogenetic results clearly show that the presence of this trait in both Oreophryne and Auparoparo is either a symplesiomorphy ..."
+
+> Yes thank you. 
+
+Pg. 19 29 Note inconsistent citation of multi-authored papers (elsewhere "et al." is used).
+
+> [[ Check pandoc ]]
+
+Pg. 19 36 This feature would be excellent ...?
+The pectoral girdle would be excellent ...?
+
+> Thank you, adopted.
+
+Space missing.
+> OK
+
+Page 20
+
+Pg. 20 10 This seems overstated. While this character may have been scored subjectively in the past, surely it could be quantified objectively.
+
+> It is a variable character, edited to state variable.
+
+Pg. 20 17 What about the cartilaginous connections? Are they also found in both clades?
+
+> Yes, edited
+
+Pg. 20 19 A bit vague. They could be synapomorphies of smaller clades.
+
+> edited "these traits are not synapmorphies for neither _Oreophryne_ nor _Auparoparo_ and do not indicate monophyly for these clades"
+
+Pg. 20 36 Delete as this is not an alternative to homoplasy but a form of it.
+
+> Yes, it was intended as two mechanisms for evolving homoplasy. Clarified by editing to say "a result of homoplasy via convergent lifestyle or parallel evolution"
+
+Page 21
+
+Pg. 21 13 Were these species previously assigned to Oreophryne?
+
+> Yes, added.
+
+Page 22
+
+Pg. 22 42 This seems overstated in implying that they occupy the same niche when that isn't known. Better to restates as "Do these species occupy the same or similar niches?"
+
+> Agree
+
+Page 23 
+
+Pg. 23 13 This is possibly overstated and may fail to distinguish between taxonomy and nomenclature. It might be safer to say "this is the first time that phylogenetic nomenclature has been applied within the Asterophryinae."
+
+> Thank you, edited as suggested 
+
+Pg. 23 phylogenetic
+[Phylogenetic nomenclature has largely moved away from the node/stem terminology.]
+
+> Thank you
+
+Pg. 23 25 The robustness has more to do with the fact that you are using a maximum-crown-clade definition with multiple external specifiers.
+
+> Thank you, this is very helpful. Yes, agree. 
+
+Pg. 23 27 You seem to be mixing two different ways of stating the definition, and it would be clearer to use one or the other. Thus either:
+"the largest crown clade including the internal specifier species for the clade (the type species of the genus) but not the internal specifier species of other asterophryine genera."
+Or
+"the crown clade originating in the MRCA of the internal specifier species for the clade (the type species of the genus) and all other extant species that are more closely related to that species than to the internal specifier species of other asterophryine genera."
+
+> Thank you very much. We struggled with the wording of the definition. We really wanted to get it right -- we truly appreciate all of your clarifications and assistance. 
+
+Pg. 23 29 that share a more recent common ancestor with that specie
+
+> We deleted this passage in the rewrite, using the largest crown clade with internal/external specifier language. 
+
+Pg. 23 36 Actually, the PhyloCode requires use of the type species as an internal specifier for the definition of a genus name. If a genetic sample of the type species is not available, proxies can be used to make an inference about the type species, but they can't replace the type species as an internal specifier.
+
+Page 24 
+
+Pg. 24 6 A bit confusing. Are you talking about molecular confirmation of assignment of a species to either O or A? If so, that should be stated more explicitly. You could also remove "as an outgroup".
+
+> Thank you, clarified
+
+Pg. 24 17 Monophyly of what? Are you talking about the monophyly of each genus or about assigning a species to one or the other genus?
+
+> Thank you, changed to "... so care must be taken to ensure correct assignment to genus."
+
+Hylophorbus than Oreophryne is.
+
+Pg. 24 24 Seems vague. Are you talking about the lack of intervening species (those assigned to other asterophryine genera, particularly Cophixalus and Paedophryne)?
+
+> Yes, exactly. 
+
+Pg. 24 24 This statement is contradicted by the phylogeny in Figure 2, where Auparoparo is more closely related to Hylophorbus than Oreophryne is.
+
+> Thank you - we agree there is an error and the point is not clear. We deleted this example. 
+
+Pg. 24 38 You should probably cite a reference for this estimate. 
+
+> This is an educated guess - we edited as follows: "with perhaps as much as 40% of species in museum collections that are yet to be described, A. Allison, unpublished"
+
+Page 25
+
+Pg. 25 6 Consider breaking up this long and complicated sentence for better clarity.
+
+> Yes, we have edited to break up and clarify. 
+
+Pg. 25 27 It seems that stability in naming is not the issue here as much as is having different (genus) names for the two clades.
+
+> Great point, edited to read "without distinct generic names for the clades represented by..." and edited the remainder of the sentence.
+
+Pg. 25 31 The subject of the sentence is "taxonomy", so it's unclear what "they" refers to.
+
+> Thank you, edited to clarify that "they" refer to Papuan microhylids, and the sentenace is about why the taxonomy is important for understanding their evolutionary history and further discovery. 
+
+Page 27 
+
+Pg. 27 35, 44 Should be lower case "de" throughout
+
+I think he also spells with a lower case "de".
+
+> Apologies this was a software crash of our reference manager, it is now fixed. 
+
+Page 34
+
+Table 2. Omosternum ("o" rather than "a")?
+
+> Thank you, fixed. 
+
+Page 34 
+
+Table line 11. This seems out of place in this table of character descriptions (though it is appropriate in Table 3).
+
+Table line 11. Why are these three characters repeated from the table legend, not numbered, and not included in Table 3?
+
+Page 35
+
+Pg. 35 Table title. Not as much an analysis as a matrix.
+
+> Thank you for the suggestion.
+
+Page 37 
+
+Pg. 37 32  It would make more sense to move this material to the legend at the top of the table.
+
+> Agreed, moved. 
+
+Page 38 
+
+Caption: Seems obvious and therefore unnecessary.
+
+> Thank you. All comments fixed as suggested.
+
+Page 40
+
+This tree should be expanded a bit in the vertical dimension so that the species names are less crowded and therefore easier to read.
+
+> We will maximize the figure, thank you.
+
+Caption: "y" missing?
+
+> Wow, thank you for catching that. 
+
+Caption: Perhaps delete as this information would be covered in the Methods.
+
+> OK 
+
+Caption: Please also explain why some names are in bold type.
+
+> Thank you - these are the internal reference species.
+
+
+Page 40 
+
+Please include a legend for Figure 3.
+
+> Apologies, this was left off. 
+
+
+Page 41 
+
+In the phylogenetic definitions, this table is referred to as Table 4. Given that the information in it is needed to apply the phylogenetic definitions, it should be included in the main article (as Table 4), not in the Supplementary materials.
+
+> Agreed. Done. 
+
+In this column, all names of species should be italicized.
+In addition, it would be useful to place the names of the authors of the type species in parentheses if they placed the species in a different genus when first described.
+Finally, if the name is no longer considered valid, the current species name should be provided. For example: Oreophryne senckenbergiana Boettger 1895 (= O. moluccensis (Peters and Doria 1878)).
+
+> Thank you. Corrected as suggested.
+
+Why is this genus listed twice with different type species? The second is correct according to ASotW.
+
+> Austrochaperina is another polyphyletic taxon, so while A. robusta is the type species for Austrochaperina sensu lato, we need additional internal references for the non-sister monophyletic clades.  We added a note to the caption. We also called this "Internal specifier/Type Species."
+
+Should be in parentheses since originally placed in Sphenophryne.
+
+Should be in parentheses since the species was originally placed in Phrynixalus.
+
+Please give the current name for this species, which appears to be O. moluccensis Peters and Doria 1878.
+
+Should be in parentheses given that Schlegel originally placed the species in Bombinator.
+
+> Thank you for these corrections. 
+
+Page 43
+
+All genus names should be italicized.
+
+> Thank you, done. 
+
+Page 43 
+
+Consider replacing with "Assignment of species to ..."
+
+> Agreed. Done. 
+
+Page 44
+
+See earlier comments on the current name of this species.
+
+> Thank you 
+
+All of the incertae sedis taxa are (questionably) placed in Oreophryne in this table. Would it be reasonable to use data on morphology (finger pad:toe pad), call type (if available), and geography to suggest that some of them might tentatively be placed in Auparoparo?
+
+> We are not comfortable making a preliminary designation based on morphology. Add a note that we do not recommend moving taxa without molecular data. We are not recommending it will be placed in either. 
+
+
+> Oreophryne nana (Brown & Alcala, 1967)
+
