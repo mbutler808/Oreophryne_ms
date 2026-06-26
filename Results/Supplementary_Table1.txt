@@ -1,0 +1,15 @@
+Supplementary Table 1. The evolutionary models identified for the best-fit 10 partition scheme identified by PartitionFinder2. See https://iqtree.github.io/doc/ for the key to models and more information.
+
+	Partition 					Best Model
+	-------------------------	-------------
+1) 	SIA(1,2)+BDNF(2,3)+NXC(1)	TVMe+R3
+2)	SIA(3)						TN+F+I+R3
+3)	BDNF(1)+NXC(3)				TNe+R4
+4)	NXC(2)						GTR+F+R3
+5)  CYTB(1)						TPM2+I+G4
+6)	CYTB(2)						GTR+F+I+G4
+7)	CYTB(3)						TIM2+F+ASC+R3
+8)	ND4(1)						TIM2+F+I+G4
+9)	ND4(2)						GTR+F+I+G4
+10)	ND4(3)						TN+F+ASC+R4
+
