@@ -1,0 +1,10 @@
+#nexus
+begin sets;
+  charset pos1 = 1-2475\3;
+  charset pos2 = 2-2475\3;
+  charset pos3 = 3-2475\3;
+  charpartition mymodels =
+    TPM2+I+G4: pos1,
+    GTR+F+I+G4: pos2,
+    TIM2+F+I+G4: pos3;
+end;

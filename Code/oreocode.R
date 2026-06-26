@@ -68,7 +68,7 @@ write.csv(data.frame("drops"=c(todrop, d$label[d$outgroup])), file="dropped_taxa
 dtree207og <- treeio::drop.tip(tree, todrop)  # tree with only one sample per species - 203 tips. 
 dtree204 <- treeio::drop.tip(tree, c(todrop, d$label[d$outgroup]))  # ingroup tree with only one sample per species - 200 tips. 
 
-keepids <- c("sencken") # leave in all  senkenbergiana
+keepids <- c("moluccensis") # leave in all  senkenbergiana
 todrop <- grep(paste(keepids, collapse="|"), todrop, invert=T, value=T )  # drop 30 taxa
 
 dtree215og <- treeio::drop.tip(tree, todrop)  # outgroup tree with all new samples, only one of others - 205 tips. 
@@ -86,7 +86,7 @@ p <- ggtree(dtree204, size=.1) +
 print_output("../Products/Figures/TrimmedIQTree", p) 
 
 ## ---- fulltree --------
-## Figure 1 - support with clades highlighted
+## Figure 2 - support with clades highlighted
 
 dtree <- dtree212  # all new samples, no outgroups, one of other taxa
 
@@ -97,7 +97,7 @@ p_support <- ggtree(dtree, size=.2) %<+% MRCA_labels  +
    geom_tiplab(aes(label=gensp, 
 #                    color=tdat$tipcol, 
                      fontface=fontface), 
-                  size=1.75, 
+                  size=1.3, 
                   offset=.005 ) + 
    geom_point2(aes(subset=(!isTip & as.numeric(label)>=95 )), size=1, color="black") +
    geom_point2(aes(subset=(!isTip & as.numeric(label)>=70 & as.numeric(label)<95 )), color="grey60", size=1) +

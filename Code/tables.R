@@ -4,6 +4,7 @@ library(tidyverse)
 library(flextable)
 library(officer)
 library(dplyr)
+library(stringr)
 
 ## ---- flextablesetup --------
 
@@ -73,17 +74,17 @@ saveRDS(lt, file="../Data/Processed_data/localities.RDS")
 
 ## ---- characterdef --------
 dat <- read.csv("../Data/Raw_data/character_key.csv")
-dat$Column <- c(1:11, "", "", "")
+dat$Column <- c(1:10, "", "", "")
 dat <- dat[c("Column", "Trait", "Definition")]
 
 kt <- dat |> 
   flextable() |> 
   separate_header() |> 
   autofit() |>
-  add_footer_lines("*Corresponding column in Table 3.") |>
+  add_footer_lines("*Corresponding column in Table 3. The last three traits were scored and are invariable across species, thus not tabluated in Table 3.") |>
   set_header_labels(Column = "Column*")
 
-table_caption = c("Table 2.", "Description of traits surveyed. Several traits are traditionally noted for Asterophryinae species: presence of two palatal folds, horizontal pupil, and lack of vomerine teeth (Boettger 1895; VanKampen 1923; Parker 1934).")
+table_caption = c("Table 2.", "Description of traits surveyed. ")
 
 dockt <- kt |>
   addcap(table_caption) |>
@@ -102,7 +103,7 @@ dat$pectoral.connector <- trimws(dat$pectoral.connector)
 not_examined <- dat$not_examined
 genus <- dat$genus
 
-dat <- dat[c("genus", "species", "procoracoid.cartilage", "clavicles", "omosternum", "sternum", "call.type", "finger.toe.width", "pectoral.connector", "toe.length", "toe.webbing", "tympanum.eye.diameter", "reference")]
+dat <- dat[c("genus", "species", "procoracoid.cartilage", "clavicles", "omosternum", "sternum", "call.type", "finger.toe.width", "pectoral.connector", "toe.length", "toe.webbing", "tympanum.eye.diameter", "character_data_reference")]
 		
 dat <- dat |> 
 		mutate( procoracoid.cartilage = "CR") |>
@@ -127,7 +128,7 @@ dat <- dat |>
                                 )
           )
 
-names(dat) <- c("Genus", "species", "proc", "clav", "omo", "ster", "call type", "fing: toe width", "pec lig", "rel toe len", "toe web", "tymp:eye diam", "reference")
+names(dat) <- c("Genus", "species", "proc", "clav", "omo", "ster", "call type", "fing: toe width", "pec lig", "rel toe len", "toe web", "tymp:eye diam", "character data reference")
 
 
 mt <- dat |> 
@@ -156,10 +157,11 @@ mt <- dat |>
             "Hill et al. 2022 places ", as_i("Aphantophryne pansa"), " within ", as_i("Auparoparo"), ", but the status of ", as_i("Aphantophryne"), " requires further study with samples from additional species and localities."
             )
           ) |>
-   add_footer_lines("*External characters were examined from specimens, internal characters and pupil shape taken from the literature.") |> 
-   add_footer_lines("Columns: (1) Procoracoids and (2) Clavicles CR= curved reduced, (3) Omasternum , (4) Sternum, (5) Call Type, (6) Finger to Toe Ratio, (7) Pectoral Connector Type, (8) Relative Toe Length of the fifth to third toe, (9) Toe Webbing, (10) Typanum to Eye Diameter Ratio, (11) Reference. See Table 2 for character states.")
-
-table_caption = c("Table 3.", "Morphological character analysis.")
+   add_footer_lines("*External characters were examined from specimens, internal characters and pupil shape taken from the literature.") 
+    
+   table_caption = c("Table 3.", "Morphological character matrix. Columns: (1) Procoracoids and (2) Clavicles CR= curved reduced, (3) Omasternum , (4) Sternum, (5) Call Type, (6) Finger to Toe Ratio, (7) Pectoral Connector Type, (8) Relative Toe Length of the fifth to third toe, (9) Toe Webbing, (10) Typanum to Eye Diameter Ratio, (11) Reference. See Table 2 for character states. Three traits are invariable across all species and not tabulated: presence of two palatal folds, horizontal pupil, and lack of vomerine teeth (Boettger 1895, VanKampen 1923, Parker 1934).")
+   
+    
               
 docmt <- mt |>
   addcap(table_caption) |>
@@ -172,37 +174,22 @@ save_as_docx(
 )  
 saveRDS(mt, file="../Data/Processed_data/character_matrix.RDS")
 
-
-# library(palmerpenguins)
-
-# dat <- penguins |> 
-  # select(species, island, ends_with("mm")) |> 
-  # group_by(species, island) |> 
-  # summarise(
-    # across(
-      # where(is.numeric), 
-      # .fns = list(
-        # avg = ~ mean(.x, na.rm = TRUE),
-        # sd = ~ sd(.x, na.rm = TRUE)
-      # )
-    # ),
-    # .groups = "drop") |> 
-  # rename_with(~ tolower(gsub("_mm_", "_", .x, fixed = TRUE)))
-
-# set_header_labels(ft, Solar.R = "Solar R (lang)",     Temp = "Temperature (degrees F)", Wind = "Wind (mph)",    Ozone = "Ozone (ppb)" )
-#  align(align = "center", part = "all", j = 3:8) |> 
-#  colformat_double(digits = 2) |>
-
 ## ---- genustypes --------
 
-gt <- read.csv("../Data/genus_type.csv") |>
-  flextable() |>
+dat <- read.csv("../Data/genus_type.csv")
+gt <- flextable(dat, col_keys = c("Genus", "dummy")) |>
   separate_header() |>
   italic(part="body", j=c("Genus")) |>
+  mk_par(j = "dummy", value = as_paragraph(as_i(Type.Species), " ", citation)) |>
+  mk_par(i= dat$syn!="", j = "dummy", value = as_paragraph(as_i(Type.Species), " ", citation, " (=", as_i(syn), syncite, ")")) |>
+  set_header_labels(Genus = "Genus-level clade", dummy = "Internal Specifier (Type Species or proxy)") |>
   autofit() |>
-  add_footer_lines("*We note that the monophyly of Austrochaperina, Liophryne, Oxydactyla, and Sphenophryne (and reciprocal monophyly of Genyophryne [Genyophryne thomsoni Boulenger, 1890] with respect to Liophryne + Oxytactyla + Sphenophryne) has not yet been established.") 
+  add_footer_lines(values = as_paragraph("*We note that the monophyly of ", as_i("Austrochaperina, Liophryne, Oxydactyla"), ", and ", as_i("Sphenophryne")," (and reciprocal monophyly of ", as_i("Genyophryne")," [", as_i("Genyophryne thomsoni")," Boulenger, 1890] with respect to ",as_i("Liophryne + Oxytactyla + Sphenophryne"),") has not yet been established. ", as_i("Austrochaperina")," is polyphyletic in recent phylogenies with possibly three monophyletic clades that are not sister taxa (Figure @fig-phylo).")) 
 
-table_caption = c("Table 4.", "Genera of Asterophryinae and their type species.")
+#ft <- add_footer_lines(ft, values = as_paragraph(as_i("Your italicized text here")))
+
+
+table_caption = c("Table 4.", "Genus-level clades of Asterophryinae and their internal specifiers (type species or proxies).")
 
 docgt <- gt |>
   addcap(table_caption) 
@@ -219,42 +206,55 @@ write.csv(dat, "../Data/Processed_data/genus_types.csv", row.names=F)
 dat <- read.csv("../Data/Raw_data/Oreophryne_sensu_lato.csv", as.is=T)
 
 names(dat) <- c("orig", "prev", "curr", "sp", "notes")
+nwords <- sapply(strsplit(dat$orig, " "), length)
+
+dat$species <- word(dat$orig, 1,2, sep=" ")
+dat$citation <- word(dat$orig, 3, nwords, sep=" ")
+
 dat <- dat |> 
 #	mutate(notes = if_else (notes=="", "Phylogenetic evidence needed", notes)) |>
 	mutate(curr = if_else (curr=="Incertae sedis", "incertae sedis", curr)) |>
-	separate("orig", c("orig", "auth"), sep = "\\(") |>
-	mutate(auth = paste0("(", auth)) |>
-	mutate( sp = gsub("^([^ ]*)\\s([^ ]*)\\s(.*)$","\\2", orig)) 
+  mutate( name = word(orig, 1,2, sep=" ")) |>
+  mutate( sp = word(orig, 2,2, sep=" ")) |>
+  mutate(auth = word(orig, 3, nwords, sep=" ")) 
+
+	# separate("orig", c("orig", "auth"), sep = "\\(") |>
+	# mutate(auth = paste0("(", auth)) |>
+  # mutate( sp = gsub("^([^ ]*)\\s([^ ]*)\\s(.*)$","\\2", orig)) 
 # REGEX explanation:
 # ^ start of string
 # ([^ ]*) = word (non-space character)
 # \\s = single space
 # (.*)$ = all characters til the end$
 
+dat$auth[dat$sp == "Microhyla achatina"] <- "Peters and Doria, 1878"
+dat$sp[dat$sp == "Microhyla achatina"] <- "Microhyla achatina var. moluccensis"
 dat$sp[dat$sp == "anulatus"] <- "anulata"
 dat$sp[dat$sp == "achatina"] <- "moluccensis"
 hlinerows <- table(dat$curr)[c("Oreophryne", "Auparoparo", "incertae sedis")]
 hlinerows <- c(hlinerows[1], sum(hlinerows[c(1,2)]))
 
 ft <- dat |> 
-  flextable() |> 
+  flextable(col_keys = c("name", "auth", "prev", "curr", "sp", "notes")) |> 
   separate_header() |> 
   autofit() |>
   set_header_labels(
-    orig = "Original designation",
+    name = "Original designation",
     auth = "Citation",
     prev = "Previous generic placement", 
     curr = "Current generic placement",
     sp = "Species",
     notes = "Notes") |> 
   hline(i=hlinerows, part="body") |>
-  italic(part="body", j=c("orig", "prev", "curr", "sp")) 
+#  mk_par(j = "orig", value = as_paragraph(as_i(name), " ", auth)) |>
+
+  italic(part="body", j=c("name", "prev", "curr", "sp")) 
 
 table_caption = c("Table 5.", "Classification of Auparoparo and Oreophryne based on phylogenetic evidence from two mitochondrial gene fragments (CytB, ND4) and three nuclear loci (BDNF, SIA, NXC). Incertae sedis taxa require phylogenetic evidence for classification.")
 
 docft <- ft |>
   addcap(table_caption) |>
-    width(j=1:6, width=c(2.13, 1.75, 1.2, 1.2, 1.5, 2)) 
+    width(j=1:6, width=c(2.13, 2, 1.75, 1.2, 1.2, 2)) 
  
 
 save_as_docx(

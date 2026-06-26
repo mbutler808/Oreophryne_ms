@@ -1,0 +1,52 @@
+Comparision of three different partition schemes (partitionfinder, 15 partition (locus+codon), 3 partition (codon)):
+
+Ten partition tree:
+
+Akaike information criterion (AIC) score: 163925.9118
+Corrected Akaike information criterion (AICc) score: 164260.9459
+Bayesian information criterion (BIC) score: 167210.8194
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TVMe+R3:sia_pos1+sia_pos2+bdnf_pos2+bdnf_pos3+nxc_pos1,TN+F+I+R3:sia_pos3,TNe+R4:bdnf_pos1+nxc_pos3,GTR+F+R3:nxc_pos2,TPM2+I+G4:cyb_pos1,GTR+F+I+G4:cyb_pos2,TIM2+F+ASC+R3:cyb_pos3,TIM2+F+I+G4:nd4_pos1,GTR+F+I+G4:nd4_pos2,TN+F+ASC+R4:nd4_pos3
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  TVMe+R3           -2997.903    6013.806 - 3.01e-314    6014.033 + -2.14e+194    6055.978 +        0
+   2  TN+F+I+R3         -3364.008    6750.017 - 3.01e-314    6752.163 + -2.14e+194    6781.975 +        0
+   3  TNe+R4            -6209.422   12436.844 - 3.01e-314   12437.361 + -2.14e+194   12471.769 +        0
+   4  GTR+F+R3           -784.132    1594.263 - 3.01e-314    1596.392 + -2.14e+194    1636.128 +        0
+   5  TPM2+I+G4         -6758.635   13527.271 - 3.01e-314   13527.637 + -2.14e+194   13542.950 +        0
+   6  GTR+F+I+G4        -2751.171    5524.341 - 3.01e-314    5526.012 + -2.14e+194    5558.835 +        0
+   7  TIM2+F+ASC+R3    -24385.708   48793.416 - 3.01e-314   48795.087 + -2.14e+194   48827.910 +        0
+   8  TIM2+F+I+G4       -8324.540   16667.079 - 3.01e-314   16668.263 + -2.14e+194   16694.868 +        0
+   9  GTR+F+I+G4        -3411.915    6845.830 - 3.01e-314    6847.590 + -2.14e+194    6879.793 +        0
+  10  TN+F+ASC+R4      -22661.968   45347.936 - 3.01e-314   45350.030 + -2.14e+194   45384.987 +        0
+
+
+  15 partition tree:
+
+  MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -81471.6110 (s.e. 2614.7659)
+Unconstrained log-likelihood (without tree): -9710.5611
+Number of free parameters (#branches + #model parameters): 571
+Akaike information criterion (AIC) score: 164085.2220
+Corrected Akaike information criterion (AICc) score: 164428.4821
+Bayesian information criterion (BIC) score: 167405.0135
+
+Three partition tree (codon model):
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -83557.3399 (s.e. 2664.2348)
+Unconstrained log-likelihood (without tree): -12952.4236
+Number of free parameters (#branches + #model parameters): 489
+Akaike information criterion (AIC) score: 168092.6797
+Corrected Akaike information criterion (AICc) score: 168334.1004
+Bayesian information criterion (BIC) score: 170935.7236
+

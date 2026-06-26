@@ -1,19 +1,19 @@
-"Genus", "Type Species"
-"Asterophrys", "Asterophrys turpicola Schlegel 1837"
-"Auparoparo", "Auparoparo penelopeia Kraus 2016"
-"Austrochaperina*", "Austrochaperina palmipes Zweifel 1956"
-"Austrochaperina*", "Austrochaperina robusta Fry 1912" 
-"Barygenys", "Barygenys cheesmanae Parker 1936" 
-"Callulops","Callulops doriae Boulenger 1888" 
-"Choerophryne", "Choerophryne proboscidea Van Kampen 1914" 
-"Cophixalus", "Cophixalus verrucosus Boettger 1892"
-"Copiula", "Copiula oxyrhina Boulenger 1898" 
-"Genyophryne*", "Genyophryne thomsoni Boulenger, 1890" 
-"Hylophorbus", "Hylophorbus rufescens Macleay 1878" 
-"Mantophyrne", "Mantophryne lateralis Boulenger 1897" 
-"Liophryne*", "Liophryne rhododactyla Boulenger 1897" 
-"Oreophryne", "Oreophryne senckenbergiana Boettger 1895"
-"Oxydactyla", "Oxydactyla brevicrus Van Kampen 1913" 
-"Paedophryne", "Paedophryne kathismaphlox Kraus 2010"
-"Sphenophryne*", "Sphenophryne cornuta Peters and Doria 1878"
-"Xenorhina", "Xenorhina oxycephala Schlegel 1858" 
+"Genus", "Type Species", "citation", "syn", "syncite"
+"Asterophrys", "Asterophrys turpicola", "(Schlegel 1837)",,
+"Auparoparo", "Auparoparo penelopeia", "(Kraus 2016)",,
+"Austrochaperina*", "Austrochaperina palmipes", "(Zweifel 1956)",,
+"Austrochaperina*", "Austrochaperina robusta", "Fry 1912",, 
+"Barygenys", "Barygenys cheesmanae", "Parker 1936",, 
+"Callulops","Callulops doriae", "Boulenger 1888",, 
+"Choerophryne", "Choerophryne proboscidea", "Van Kampen 1914",, 
+"Cophixalus", "Cophixalus verrucosus", "(Boulenger, 1898)",,
+"Copiula", "Copiula oxyrhina", "(Boulenger 1898)",, 
+"Genyophryne*", "Genyophryne thomsoni", "Boulenger, 1890",, 
+"Hylophorbus", "Hylophorbus rufescens", "Macleay 1878",, 
+"Mantophyrne", "Mantophryne lateralis", "Boulenger 1897",, 
+"Liophryne*", "Liophryne rhododactyla", "(Boulenger 1897)",, 
+"Oreophryne", "Oreophryne senckenbergiana", "Boettger 1895", "O. moluccensis", "(Peters and Doria 1878)"
+"Oxydactyla", "Oxydactyla brevicrus", "(Van Kampen 1913)",, 
+"Paedophryne", "Paedophryne kathismaphlox", "Kraus 2010",,
+"Sphenophryne*", "Sphenophryne cornuta", "Peters and Doria 1878",,
+"Xenorhina", "Xenorhina oxycephala", "(Schlegel 1858)",, 
