@@ -38,7 +38,7 @@ Akaike information criterion (AIC) score: 164085.2220
 Corrected Akaike information criterion (AICc) score: 164428.4821
 Bayesian information criterion (BIC) score: 167405.0135
 
-Three partition tree (codon model):
+3 partition tree (codon model):
 
 MAXIMUM LIKELIHOOD TREE
 -----------------------
@@ -50,3 +50,13 @@ Akaike information criterion (AIC) score: 168092.6797
 Corrected Akaike information criterion (AICc) score: 168334.1004
 Bayesian information criterion (BIC) score: 170935.7236
 
+5 partition tree (locus model):
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -83302.1008 (s.e. 2657.0734)
+Unconstrained log-likelihood (without tree): -11432.1169
+Number of free parameters (#branches + #model parameters): 504
+Akaike information criterion (AIC) score: 167612.2017
+Corrected Akaike information criterion (AICc) score: 167870.5976
+Bayesian information criterion (BIC) score: 170542.4555

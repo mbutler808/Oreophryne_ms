@@ -568,7 +568,7 @@ Page 40
 
 This tree should be expanded a bit in the vertical dimension so that the species names are less crowded and therefore easier to read.
 
-> We will maximize the figure, thank you.
+> We will maximize the figure as much as possible, thank you.
 
 Caption: "y" missing?
 
@@ -636,8 +636,5 @@ See earlier comments on the current name of this species.
 
 All of the incertae sedis taxa are (questionably) placed in Oreophryne in this table. Would it be reasonable to use data on morphology (finger pad:toe pad), call type (if available), and geography to suggest that some of them might tentatively be placed in Auparoparo?
 
-> We are not comfortable making a preliminary designation based on morphology. Add a note that we do not recommend moving taxa without molecular data. We are not recommending it will be placed in either. 
-
-
-> Oreophryne nana (Brown & Alcala, 1967)
+> We did not have access to these specimens and therefore did not collect any data on these species and therefore refrain from making a tenative assignment to either genus. It is very hard still to make a tenative assignment. There are large unknown geographical gaps, call data do not exist for many species, and there is overlap in toepad morphology. Perhaps once we know more.
 
