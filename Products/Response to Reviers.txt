@@ -1,4 +1,13 @@
-Page: 2
+We thank Kevin de Queiroz and the Associate Editor the detailed comments which we found very constructive and helpful. We have incorporated all of the comments and provide a list of responses below. The question/comment, page/line number is listed first followed by our response indicated by >. 
+
+The only response taht we did not accept was the final question on whether we couldnʻt make prelimiary assignments based on call type and relative toe pad widths. This is not possible as call data are lacking for the majority of taxa, and were not able to examine the specimens in question.
+
+Thank you for the time invested on our manuscript, we are extrememly grateful!
+
+Sincerely,
+Marguerite Butler on behalf of the authors
+===============================================
+Response to reviewer comments:
 
 Pg. 2. 8. "Since morphological comparison is a critical first step in choosing which taxa
 to include in a molecular phylogeny for a new species, polyphyly can be challenging to identify"
@@ -229,13 +238,13 @@ I think it would more accurate to state this as "we define each genus to include
 
 Pg. 12 45 You should probably cite a reference for this statement.
 
-> This statement has been deleted
+> We couldnʻt recall where we got this idea and as it was not a major point, this statement has been deleted
 
 Page 13
 
 Pg. 13 5 This citation doesn't seem appropriate as the terminology in question is that used in the PhyloCode. Brown et al. (2015) were presumably following an early version of the PhyloCode.
 
-> Good point, it has been removed. Brown et al (2015) were attempting to follow both codes. 
+> Good point, it has been removed. Brown et al (2015) were attempting to satisfy both codes. 
 
 pg 13. 16. [Throughout] I'm not sure what are the conventions of the BJLS, but in the PhyloCode, authors of names (as well as the publication dates) are cited not using parentheses: "Microhylidae Günther 1858." It also recommends italicizing all scientific names (even those traditionally associated with ranks higher than genus), although the BJLS may again follow a different convention.
 
@@ -252,11 +261,12 @@ Chaperina in part (Taylor 1920)
 
 Pg. 13 27 Throughout the manuscript, O. senckenbergiana is treated as though it is the current name of the species. However, the synonymy given on the next line suggests that the current name should be O. moluccensis, and that is corroborated by the entries for both Oreophryne and O. moluccensis in Amphibian Species of the World. It's OK to use senckenbergiana here given its use by Boettger in proposing Oreophryne, but the current name should be used in most other places in the text.
 
-> OK [[We have not been able to verify that O. moluccensis is the same species as O. senekenbergiana, and therefore we do not know if they are synonyms. O. moluccensis and O. senkenbergiana were described from different islands. We have no genetic material from O. moluccensis but based on other species, frogs from different islands are different species.]]
+> We strongly suspect that O. moluccensis is not the same species as O. senekenbergiana, as they were described from different islands and based on what we have learned about the phylo-geographic distrubtion of this group in recent years. However we do not have genetic data for O. moluccensis therefore we have changed the 
+text to reflect the currently recognized name for this taxon, O. moluccensis and have included a note for further study.
 
 Pg. 13 29 It's not clear what is meant by "morphological monotypy". A type species is considered to have been designated by monotypy if the author who proposed the genus explicitly included only a single species at the time of the proposal. Even if that species is later found to be more than one species (whether by morphological or molecular evidence), the designation would still be considered to be "by monotypy". Thus, I suggest deleting everything highlighted here except "by monotypy".
 
-> Thank you for the explanation. We have deleted and moved "by monotypy" to refer to Oreophryne Boettger 1895, as he described the genus from a single species.
+> Thank you for the explanation. We have deleted and replaced with "by monotypy" to refer to Oreophryne Boettger 1895, as he described the genus from a single species.
 
 Pg. 13 45 Should be "Nieden (1926)."
 
@@ -266,11 +276,11 @@ Pg. 14
 
 Pg. 14 8 This has already been stated in the entry for Oreophryne and is not needed here.
 
-> OK, deleted.
+> Thank you, we appreciate reducing repetition.
 
 Pg. 14 19 It seems odd to include this material as a separate "Description" section.  The way it is stated, it is a diagnosis that serves to distinguish members of Oreophryne from those of all other Asterophryinae genera except Auparoparo.  I suggest removing the heading and including the material in the Diagnosis section.
 
-> OK, edited as recommended. It seemed odd to write a diagnosis that was not unambiguously "diagnostic" to genus which was why we put it in a Description section. However, we accept your recommendation and deleted the header and combined with Diagnosis as recommended. 
+> OK, edited as recommended. It seemed odd to write a diagnosis that was not unambiguously "diagnostic" which was why we put it in a Description section. However, we accept your recommendation and deleted the header and combined with Diagnosis. 
 
 Pg 14 33 reverse order?
 
@@ -636,5 +646,5 @@ See earlier comments on the current name of this species.
 
 All of the incertae sedis taxa are (questionably) placed in Oreophryne in this table. Would it be reasonable to use data on morphology (finger pad:toe pad), call type (if available), and geography to suggest that some of them might tentatively be placed in Auparoparo?
 
-> We did not have access to these specimens and therefore did not collect any data on these species and therefore refrain from making a tenative assignment to either genus. It is very hard still to make a tenative assignment. There are large unknown geographical gaps, call data do not exist for many species, and there is overlap in toepad morphology. Perhaps once we know more.
+> We agree that this is not satisfying. However, we did not have access to these specimens and therefore did not collect any data on these species and therefore refrain from making a tenative assignment to either genus. It is very hard still to make a tenative assignment. There are large unknown geographical gaps, call data do not exist for many species, and there is overlap in toepad morphology. Perhaps once we know more.
 

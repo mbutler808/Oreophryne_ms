@@ -57,7 +57,7 @@ lt <- dat |>
   autofit() |>
   set_header_labels(Latitude.Longitude = "Latitude, Longitude")
 
-table_caption = c("Table 1.", "Locality information for samples sequenced in this study. See Hill, et al., 2023, Table 1 for additional metadata.")
+table_caption = c("Table 1.", "Locality information for samples sequenced in this study. See Table 1 in Hill, et al., 2023 for additional metadata.")
 
 doclt <- lt |>
   addcap(table_caption) |>
@@ -159,7 +159,7 @@ mt <- dat |>
           ) |>
    add_footer_lines("*External characters were examined from specimens, internal characters and pupil shape taken from the literature.") 
     
-   table_caption = c("Table 3.", "Morphological character matrix. Columns: (1) Procoracoids and (2) Clavicles CR= curved reduced, (3) Omasternum , (4) Sternum, (5) Call Type, (6) Finger to Toe Ratio, (7) Pectoral Connector Type, (8) Relative Toe Length of the fifth to third toe, (9) Toe Webbing, (10) Typanum to Eye Diameter Ratio, (11) Reference. See Table 2 for character states. Three traits are invariable across all species and not tabulated: presence of two palatal folds, horizontal pupil, and lack of vomerine teeth (Boettger 1895, VanKampen 1923, Parker 1934).")
+   table_caption = c("Table 3.", "Morphological character matrix. Columns: (1) Procoracoids and (2) Clavicles CR= curved reduced, (3) Omasternum , (4) Sternum, (5) Call Type, (6) Finger to Toe Ratio, (7) Pectoral Connector Type, (8) Relative Toe Length of the fifth to third toe, (9) Toe Webbing, (10) Typanum to Eye Diameter Ratio, (11) Reference. See Table 2 for character states. Three traits are invariable across all species and not tabulated: presence of two palatal folds, a horizontal pupil, and lack of vomerine teeth (Boettger 1895, VanKampen 1923, Parker 1934).")
    
     
               
@@ -184,7 +184,7 @@ gt <- flextable(dat, col_keys = c("Genus", "dummy")) |>
   mk_par(i= dat$syn!="", j = "dummy", value = as_paragraph(as_i(Type.Species), " ", citation, " (=", as_i(syn), syncite, ")")) |>
   set_header_labels(Genus = "Genus-level clade", dummy = "Internal Specifier (Type Species or proxy)") |>
   autofit() |>
-  add_footer_lines(values = as_paragraph("*We note that the monophyly of ", as_i("Austrochaperina, Liophryne, Oxydactyla"), ", and ", as_i("Sphenophryne")," (and reciprocal monophyly of ", as_i("Genyophryne")," [", as_i("Genyophryne thomsoni")," Boulenger, 1890] with respect to ",as_i("Liophryne + Oxytactyla + Sphenophryne"),") has not yet been established. ", as_i("Austrochaperina")," is polyphyletic in recent phylogenies with possibly three monophyletic clades that are not sister taxa (Figure @fig-phylo).")) 
+  add_footer_lines(values = as_paragraph("*We note that the monophyly of ", as_i("Austrochaperina, Liophryne, Oxydactyla"), ", and ", as_i("Sphenophryne")," (and reciprocal monophyly of ", as_i("Genyophryne")," [", as_i("Genyophryne thomsoni")," Boulenger, 1890] with respect to ",as_i("Liophryne + Oxytactyla + Sphenophryne"),") has not yet been established. ", as_i("Austrochaperina")," is polyphyletic in recent phylogenies with possibly three monophyletic clades that are not sister taxa (Figure 2).")) 
 
 #ft <- add_footer_lines(ft, values = as_paragraph(as_i("Your italicized text here")))
 
@@ -250,7 +250,7 @@ ft <- dat |>
 
   italic(part="body", j=c("name", "prev", "curr", "sp")) 
 
-table_caption = c("Table 5.", "Classification of Auparoparo and Oreophryne based on phylogenetic evidence from two mitochondrial gene fragments (CytB, ND4) and three nuclear loci (BDNF, SIA, NXC). Incertae sedis taxa require phylogenetic evidence for classification.")
+table_caption = c("Table 5.", "Classification of Auparoparo and Oreophryne based on phylogenetic evidence from two mitochondrial gene fragments (CytB, ND4) and three nuclear loci (BDNF, SIA, NXC). Incertae sedis taxa require molecular phylogenetic evidence for assignment.")
 
 docft <- ft |>
   addcap(table_caption) |>
