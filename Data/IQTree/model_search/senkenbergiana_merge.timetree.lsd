@@ -31,13 +31,13 @@ Parameters:
   h to print Help 
   y to accept or type a letter to change an option (x = Exit) 
 Tree 1 
-Parameter to adjust variances was set to 0.0220614 (settable via option -b)
+Parameter to adjust variances was set to 0.0223605 (settable via option -b)
 Minimum branch length of time scaled tree (settable via option -u and -U): 0
 
 *RESULTS:
 - Dating results:
- rate 0.00885464, tMRCA -26.1614 , objective function 1.21
+ rate 0.00901104, tMRCA -25.9622 , objective function 1.20923
 
 *********************************************************
 
-TOTAL ELAPSED TIME: 0.002533 seconds
+TOTAL ELAPSED TIME: 0.002823 seconds

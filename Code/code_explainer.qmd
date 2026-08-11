@@ -1,7 +1,7 @@
 ---
 title: "An explanation of the code used for the Auparoparo Oreophryne taxonomy manuscript"
 author: "Marguerite Butler"
-date: "2025-05-26"
+date: "2026-08-08"
 output: html_document
 ---
 
@@ -9,11 +9,16 @@ output: html_document
 
 Many thanks to David Wachsmuth for his [beautiful blog post](https://upgo.lab.mcgill.ca/2019/12/13/making-beautiful-maps/) that explains spatial data _so well_, along with how to make beautiful inset maps using `sf`, `ggplot2`, and `cowplot`. I ended up using `grid`ʻs `viewport`, but `cowplot` is great too. 
 
-# The code in this repository produces a map and a phylogeny
+### Note 
 
+This was an interesting experiment for me trying `quarto` for both integrating the code with documentation and writing the manuscript versus `R` plus `LaTeX`. The integration of the former is great, and helps with organization, but Iʻm sure that Iʻm happy with the loss of fine control that `LaTeX` offers. Also some of the `.docx` glitches drive me crazy - if what you saw in `.html` was what you got in `.pdf` and `.docx`, that might make it more worthwhile for me. Maybe Iʻll use `quarto` for code documentation and go back to `LaTeX` for the manuscript and tables?
+
+# The code in this repository produces the figures (map and phylogeny) and tables in our manuscript.
+
+ 
 The map provides the complete range for all known _Oreophryne_ sensu lato species, covering Papua New Guinea, Indonesia, and the Philippines. 
 
-The phylogeny shows where the clades `Auparoparo` and `Oreophryne` fall within the subfamily Asterophryinae, along with support values at the nodes. 
+The phylogeny shows where the clades _Auparoparo_ and _Oreophryne_ fall within the subfamily Asterophryinae, along with support values at the nodes. 
 
 All scripts should be run starting from the `Code` directory. 
 
@@ -21,7 +26,7 @@ All scripts should be run starting from the `Code` directory.
 knitr::read_chunk('maps.R')
 ```
 
-# MAP
+# MAP (Figure 3)
 
 ## Setup for the mapping
 
@@ -126,3 +131,155 @@ The final map is written to the `Results` directory as `fig3.map-dot.pdf` or `.p
 #| message: FALSE
 #| warning: FALSE
 ```
+
+# PHYLOGENY (Figure 2)
+
+```{r, include=FALSE, cache=FALSE}
+knitr::read_chunk('oreophylogeny.R')
+```
+
+## Setup
+
+The phylogeny plotting script is in `oreophylogeny.R`. Load the needed packages. Additional packages used include `treeio` is for tree input and ouptut, `tidytree` and `ggtree` is for tree manipulation and plotting. 
+
+See Guangchuang Yuʻs excellent book explaining his packages _Data Integration, Manipulation and Visualization of Phylogenetic Trees_ by <https://yulab-smu.top/treedata-book/index.html>
+
+```{r, packages}
+#| message: FALSE
+#| warning: FALSE
+```
+
+Load my personal helper functions 
+
+```{r, functions}
+#| message: FALSE
+#| warning: FALSE
+```
+
+Read in the files from the Data directory (in subdirectories as indicated) -- the tree file, the metadata, genus type species `genus_references.csv`, and color codes. 
+
+```{r, loaddata}
+```
+
+## Plot the full tree 
+
+The full tree is quite large and plotted to the `Products/Validation_Figures` directory so that we can check the data to make sure everything read in correctly. 
+
+We use create a `ggtree` object and add tip labels and adjust line thickneses
+
+```{r, plotfulltree}
+#| message: FALSE
+#| warning: FALSE
+```
+
+## Remove duplicate represenatatives of each species 
+
+To improve readability, we drop some duplicate tips so that there is only one per species.  
+
+We grab the species names from the tree, and use the `distinct` function by species name to get a list of tips to drop (and those to keep). Then use the `drop.tip` function to remove duplicates and the outgroup species, and plot the trimmed tree for checking. 
+
+```{r, trimtree}
+#| message: FALSE
+#| warning: FALSE
+```
+
+## Final, pretty tree
+
+Now we are ready to plot the final, pretty tree with _Auparoparo_ and _Oreophryne_ highlighted. First, we identify the node of the Most Recent Common Ancestor (MRCA) for each of these clades, using the `get_MRCA` function on the tip names, and associate the labels with the nodes. 
+
+We can then create a `ggtree` and attatch the `MRCA_labels` data to the ggtree object which is used to annotate the node label (letter "A" or "B") for the MRCA nodes (the tree can be thought of as a spreadsheet with one row per node, and the MRCA_label data is just added as an additional column). 
+
+IQTREE provides the boostrap support values for each node, and we convert these to color coded dots to indicate bootstrap support using hte `geom_point2` function,   
+
+We use `geom_text2` function to add the `MRCA_labels` "A" and "B" on the respective nodes, and we can add the gradient on these clades when we print the final tree using the very nifty function `gradient_tree` together with the `print_output` function. 
+
+```{r, fulltree}
+#| message: FALSE
+#| warning: FALSE
+```
+
+# TABLES
+
+Letʻs face it, tables are a pain. We used the `flextable` package to make tables with tailored formatting for this manuscript, output to both quartoʻs native .html format which was great for collaborating, and to .docx format required for journal submission. 
+
+`flextable` is very cool, and `quarto` integration is great, but I found at times that I missed the fine control that `LaTeX` allows. 
+
+The inputs are in `../Data/Raw_data/` and the outputs are saved to `../Data/Processed_data/` if they are to be accessed by other code or markdown files, and to `../Products/Manuscript/Tables/` if they are final products for the manuscript. 
+
+## Setup 
+
+```{r, include=FALSE, cache=FALSE}
+knitr::read_chunk('tables.R')
+```
+
+### Load the packages
+
+Make sure you have these packages installed.
+
+```{r, tablepackages}
+```
+### Standardize the look of the tables 
+
+These useful functions store the settings that can be applied for each table just by calling the function. 
+
+```{r, flextablesetup}
+#| message: FALSE
+#| warning: FALSE
+```
+
+## Locality table (Table 1)
+
+Read in the raw data, and specify the column headers, caption, and formatting. Save table in `.docx` format and an R data object in case we want to use it again later in code or markdown.
+
+```{r, localities}
+#| message: FALSE
+#| warning: FALSE
+```
+
+## Character State Definitions (Table 2)
+
+Table explaining the characters that were analyzed and how they are defined. The table is set up similarly, but this table has a footer. 
+
+```{r, characterdef}
+#| message: FALSE
+#| warning: FALSE
+```
+
+## Character Matrix (Table 3)
+
+The table reporting the character values for each species assessed. This table involves more filtering and formatting to fit on a page. This table also includes footnotes in particular cells/headers.
+
+```{r, charactermatrix}
+#| message: FALSE
+#| warning: FALSE
+```
+
+## Reference Species (Table 4)
+
+Table of reference species (type species or proxy) for each genus-level clade used in the phylogenetic definition of the clades. 
+
+```{r, genustypes}
+#| message: FALSE
+#| warning: FALSE
+```
+
+## Taxonomic Transfers (Supplementary table 2)
+
+The taxonomy table, listing all known species of _Oreophryne_ as currently recognized and to which genus it can be assigned.  Some filtering (separating words, italics, etc.) and light editing of the data (correcting the gender, etc.).  
+
+```{r, taxonomy}
+#| message: FALSE
+#| warning: FALSE
+```
+
+## Type Localties 
+
+This is a table made for our convenience to compile the data found in many papers.
+
+```{r, typelocalities}
+#| message: FALSE
+#| warning: FALSE
+```
+
+
+

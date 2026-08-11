@@ -1,71 +1,23 @@
-# Oreophryne data
+# README.md
 
-README.md
+`Data` directory contains three subdiretories for the three data types:
 
-# wrong name! Searched and replaced sp.2 or sp.3 -> gagneorum
+- IQTree: all of the phylogenetic inputs (and outputs) generated using IQTREE
+  - alignment: sequence data as alignments
+    - input: all other inputs, model specifications, etc.
+  - model_search: all outputs
+    - iqtreerun_bestmodel.sh - shell script for generating phylogeny
+    - subdirectories for testing alternate partition models
+  - README explains how to produce the results
+- Raw_data:
+    - input data for the codes for creating maps, plotting phylogenies, and making tables, prior to any processing.
+    - metadata for the phylogeny and map and input data for the tables. 
+- Processed_data: 
+    - data for manuscript tables
+    - processed data for input to analyses
+  - metadata files for broader subfamiliy are at the top level of Data.
 
-20571
-20572
-20538
-20532
-
-Oreophryne_B sp.2
-Oreophryne_B sp.3
-Oreophryne_B sp.3
-Oreophryne_B sp.3
-
-Oreophryne gagneorum
-Oreophryne gagneorum
-Oreophryne gagneorum
-Oreophryne gagneorum
-
-Oreophryne
-
-```{r}
-#| label: tbl-transfers
-#| tbl-cap: "Classification of _Auparoparo_ and _Oreophryne_ based on phylogenetic evidence from two mitochondrial gene fragments (CytB, ND4) and three nuclear loci (BDNF, SIA, NXC)."
-#| echo: FALSE
-dat <- read.csv("../Data/taxonomic_transfers.csv", as.is=T)
-
-names(dat) <- c("orig", "prev", "curr", "sp", "notes")
-dat <- dat %>% separate("orig", c("orig", "auth"), sep = "\\(") %>%
-  mutate(auth = paste0("(", auth)) 
-  
-tt <- dat |> 
-  flextable() |> 
-  separate_header() |> 
-  autofit() |>
-  set_header_labels(
-    orig = "Original designation",
-    auth = "Citation",
-    prev = "Previous generic placement", 
-    curr = "Current generic placement",
-    sp = "Species",
-    notes = "Notes") |> 
-  italic(part="body", j=c("orig", "prev", "curr", "sp"))
-
-tt  
-```
-
-```{r}
-#| label: tbl-remaining
-#| tbl-cap: "Remaining named species of _Oreophryne_ sensu lato which require phylogenetic evidence to classify into _Oreophryne_ vs. _Auparoparo_."
-#| echo: FALSE
-dat <- read.csv("../Data/remaining_sensu_lato.csv", as.is=T)[1]
-
-names(dat) <- c("orig")
-dat <- dat %>% separate("orig", c("orig", "auth"), sep = "\\(") %>%
-  mutate(auth = paste0("(", auth)) 
-  
-tt <- dat |> 
-  flextable() |> 
-  separate_header() |> 
-  autofit() |>
-  set_header_labels(
-    orig = "Original designation",
-    auth = "Citation") |> 
-  italic(part="body", j=c("orig")) |>
-  set_caption("Remaining named species of _Oreophryne_ sensu lato which require phylogenetic evidence to classify into _Oreophryne_ vs. _Auparoparo_.")
-
-tt
-```
+Files:
+- gencolorABC.csv = color codes for genera
+- genus_references.csv = type specimens and proxies used in the phylogeny
+- genus_type.csv = list of type species/proxies and citations

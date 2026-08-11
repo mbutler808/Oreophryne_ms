@@ -55,18 +55,20 @@ lt <- dat |>
   separate_header() |> 
   italic(part="body", j=c("Species")) |>
   autofit() |>
-  set_header_labels(Latitude.Longitude = "Latitude, Longitude")
+  set_header_labels(LatLon = "Latitude, Longitude")
 
-table_caption = c("Table 1.", "Locality information for samples sequenced in this study. See Table 1 in Hill, et al., 2023 for additional metadata.")
+table_caption = c("Table 1.", "Locality information and GenBank sccession numbers for samples sequenced in this study. See Table 1 in Hill, et al., 2023 for additional metadata.")
 
 doclt <- lt |>
+  fontsize(size = 10, part = "all") |>
   addcap(table_caption) |>
-	width(j=1:4, width=c(0.93, 2.03, 2.26, 1.32))  
+	width(j=1:9, width=c(0.9, 1.9, 2.4, .9, 0.9, 0.9, 0.9, 0.9, 0.9))  
 
+doclt
 save_as_docx(
   doclt, 
-  path = "../Results/table1.localities.docx",
-  pr_section = portrait_properties
+  path = "../Products/Manuscript/Tables/table1.localities.docx",
+  pr_section = landscape_properties
 )  
 
 saveRDS(lt, file="../Data/Processed_data/localities.RDS")
@@ -90,9 +92,10 @@ dockt <- kt |>
   addcap(table_caption) |>
  	width(j=1:3, width=c(0.79, 1.51, 4.23))  
 
+dockt
 save_as_docx(
   dockt, 
-  path = "../Results/table2.characterkey.docx",
+  path = "../Products/Manuscript/Tables/table2.characterkey.docx",
   pr_section = portrait_properties
 )  
 saveRDS(kt, file="../Data/Processed_data/character_key.RDS")
@@ -167,9 +170,10 @@ docmt <- mt |>
   addcap(table_caption) |>
 	width(j=1:13, width=c(1.03, 1.42, .56, .53, .58, .52, .67, .67, .53, .55, .74, .64, 1.21))  
 
+docmt
 save_as_docx(
   docmt, 
-  path = "../Results/table3.charactermatrix.docx",
+  path = "../Products/Manuscript/Tables/table3.charactermatrix.docx",
   pr_section = landscape_properties
 )  
 saveRDS(mt, file="../Data/Processed_data/character_matrix.RDS")
@@ -194,13 +198,42 @@ table_caption = c("Table 4.", "Genus-level clades of Asterophryinae and their in
 docgt <- gt |>
   addcap(table_caption) 
 
+docgt
 save_as_docx(
   docgt, 
-  path = "../Results/table4.genustypes.docx",
+  path = "../Products/Manuscript/Tables/table4.genustypes.docx",
   pr_section = portrait_properties
 )  
 saveRDS(gt, file = "../Data/Processed_data/genus_types.RDS")
 write.csv(dat, "../Data/Processed_data/genus_types.csv", row.names=F)
+
+## ---- models --------
+
+dat <- read.csv("../Data/Raw_data/models.csv", as.is=T) |>
+		mutate(Row = row_number(), .before = 1) 
+
+pmt <- dat |> 
+  flextable(col_keys = c("Row", "Partition", "Model")) |> 
+  set_header_labels(
+    Row = "",
+    Partition = "Partition",
+    Model = "Model") |> 
+  separate_header() |> 
+  autofit() 
+
+table_caption = c("Supplementary Table 1.", "The evolutionary models identified for the best-fit 9 partition scheme identified by PartitionFinder2. See https://iqtree.github.io/doc/ for the key to models and more information.")
+
+docpmt <- pmt |>
+  addcap(table_caption) 
+
+docpmt 
+save_as_docx(
+  docpmt, 
+  path = "../Products/Manuscript/Tables/supptable1.models.docx",
+  pr_section = portrait_properties
+)  
+saveRDS(pmt, file = "../Data/Processed_data/models.RDS")
+write.csv(dat, "../Data/Processed_data/models.csv", row.names=F)
 
 ## ---- taxonomy --------
 dat <- read.csv("../Data/Raw_data/Oreophryne_sensu_lato.csv", as.is=T)
@@ -208,39 +241,38 @@ dat <- read.csv("../Data/Raw_data/Oreophryne_sensu_lato.csv", as.is=T)
 names(dat) <- c("orig", "prev", "curr", "sp", "notes")
 nwords <- sapply(strsplit(dat$orig, " "), length)
 
-dat$species <- word(dat$orig, 1,2, sep=" ")
-dat$citation <- word(dat$orig, 3, nwords, sep=" ")
+dat$citation <- ifelse( dat$sp!="moluccensis", 
+                        word(dat$orig, 3, nwords, sep=" "),
+                        word(dat$orig, 5, nwords, sep=" ")
+                      )
 
+# filtering to separate the information in the original designation to separate data fields
 dat <- dat |> 
-#	mutate(notes = if_else (notes=="", "Phylogenetic evidence needed", notes)) |>
-	mutate(curr = if_else (curr=="Incertae sedis", "incertae sedis", curr)) |>
-  mutate( name = word(orig, 1,2, sep=" ")) |>
-  mutate( sp = word(orig, 2,2, sep=" ")) |>
-  mutate(auth = word(orig, 3, nwords, sep=" ")) 
+  mutate( name = ifelse( dat$sp!="moluccensis", 
+                        word(dat$orig, 1,2, sep=" "), # most species
+                        word(dat$orig, 1,4, sep=" ")  # type has 4 words
+                      )
+        ) |> 
+  mutate( citation = ifelse( dat$sp!="moluccensis", 
+                        word(dat$orig, 3, nwords, sep=" "),
+                        word(dat$orig, 5, nwords, sep=" ")
+                      )
+        ) |> 
+  mutate(curr = if_else (curr=="Incertae sedis", "incertae sedis", curr)) |>
+  mutate( sp = word(name, -1,-1, sep=" ")) 
 
-	# separate("orig", c("orig", "auth"), sep = "\\(") |>
-	# mutate(auth = paste0("(", auth)) |>
-  # mutate( sp = gsub("^([^ ]*)\\s([^ ]*)\\s(.*)$","\\2", orig)) 
-# REGEX explanation:
-# ^ start of string
-# ([^ ]*) = word (non-space character)
-# \\s = single space
-# (.*)$ = all characters til the end$
-
-dat$auth[dat$sp == "Microhyla achatina"] <- "Peters and Doria, 1878"
-dat$sp[dat$sp == "Microhyla achatina"] <- "Microhyla achatina var. moluccensis"
+# change of gender to match Genus name
 dat$sp[dat$sp == "anulatus"] <- "anulata"
-dat$sp[dat$sp == "achatina"] <- "moluccensis"
 hlinerows <- table(dat$curr)[c("Oreophryne", "Auparoparo", "incertae sedis")]
 hlinerows <- c(hlinerows[1], sum(hlinerows[c(1,2)]))
 
 ft <- dat |> 
-  flextable(col_keys = c("name", "auth", "prev", "curr", "sp", "notes")) |> 
+  flextable(col_keys = c("name", "citation", "prev", "curr", "sp", "notes")) |> 
   separate_header() |> 
   autofit() |>
   set_header_labels(
     name = "Original designation",
-    auth = "Citation",
+    citation = "Citation",
     prev = "Previous generic placement", 
     curr = "Current generic placement",
     sp = "Species",
@@ -256,10 +288,10 @@ docft <- ft |>
   addcap(table_caption) |>
     width(j=1:6, width=c(2.13, 2, 1.75, 1.2, 1.2, 2)) 
  
-
+docft
 save_as_docx(
   docft, 
-  path = "../Results/table5.taxonomy.docx",
+  path = "../Products/Manuscript/Tables/supptable2.taxonomy.docx",
   pr_section = landscape_properties
 )  
 saveRDS(ft, file = "../Data/Processed_data/taxonomy.RDS")
@@ -274,6 +306,7 @@ names(gps) <- c("orig", "latitude", "longitude")
 gps$sp <- gsub("^([^ ]*)\\s([^ ]*)\\s(.*)$","\\2", gps$orig )
 gps$citation <- gsub("^([^ ]*)\\s([^ ]*)\\s(.*)$","\\3", gps$orig )
 
+head(gps)
 dat2 <- merge(dat, gps, by="sp", all=T)
 write.csv(dat2, "../Data/Processed_data/oreophryne-type-localities.csv")
   

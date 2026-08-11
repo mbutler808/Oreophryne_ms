@@ -1,7 +1,7 @@
-ID,Species,Locality,Latitude/Longitude
-BJE01143,Oreophryne moluccensis,"Kabupaten Halmahera Utara,
-Halmahera Island, North Maluku","1.7899, 127.8910"
-BJE01144,Oreophryne moluccensis,"Kabupaten Halmahera Utara,
-Halmahera Island, North Maluku","1.7899, 127.8910"
+ID,Species,Locality,LatLon,SIA,BDNF,NXC1,CYTB,ND4
 BJE01120,Oreophryne moluccensis,"Kabupaten Halmahera Utara,
-Halmahera Island, North Maluku","1.8228, 127.8300"
+Halmahera Island, North Maluku","1.8228, 127.8300",PV703775,PV703761,PV703771,PV703765,PV703768
+BJE01143,Oreophryne moluccensis,"Kabupaten Halmahera Utara,
+Halmahera Island, North Maluku","1.7899, 127.8910",PV703776,PV703762,PV703772,PV703766,PV703769
+BJE01144,Oreophryne moluccensis,"Kabupaten Halmahera Utara,
+Halmahera Island, North Maluku","1.7899, 127.8910",PV703777,PV703763,PV703773,PV703767,PV703770

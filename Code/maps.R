@@ -254,7 +254,7 @@ print(insetmap, vp = viewport(0.72, 0.78,
 
 ## ---- writemap --------
 ## print the basemap with the inset map in viewport
-filepath="../Results/fig3.map-dot"
+filepath="../Products/Manuscript/Figures/fig3.map-dot"
 height=6
 width=9
 pdf(file=paste0(filepath, ".pdf"), height=height, width=width)
@@ -320,7 +320,7 @@ typemap <- ggplot() +
 
 ## ---- writetypemap --------
 
-filepath="../Products/Figures/map_Oreophyrne_sensu_lato_types"
+filepath="../Products/Validation_Figures/map_Oreophyrne_sensu_lato_types"
 height=6
 width=9
 pdf(file=paste0(filepath, ".pdf"), height=height, width=width)
@@ -331,9 +331,3 @@ png(file=paste0(filepath, ".png"), height=height, width=width, units="in", res=3
 dev.off()
 
 
-## ---- insetedges --------
-# basemap +
-  # geom_hline(yintercept = -8.75, lty = 2, colour = "red") +
-  # geom_hline(yintercept = -12, lty = 2, colour = "red") +
-  # geom_vline(xintercept = 147, lty = 2, colour = "red") +
-  # geom_vline(xintercept = 155, lty = 2, colour = "red") 
