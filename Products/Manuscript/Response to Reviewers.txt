@@ -1,6 +1,10 @@
-We thank Kevin de Queiroz and the Associate Editor the detailed comments which we found very constructive and helpful. We have incorporated all of the comments and provide a list of responses below. The question/comment, page/line number is listed first followed by our response indicated by >. 
+We thank Kevin de Queiroz and the Associate Editor the detailed comments which we found very constructive and helpful. 
 
-The only response taht we did not accept was the final question on whether we couldnʻt make prelimiary assignments based on call type and relative toe pad widths. This is not possible as call data are lacking for the majority of taxa, and were not able to examine the specimens in question.
+We have incorporated all of the comments and provide a list of responses below. The question/comment, page/line number is listed first followed by our response indicated by >. 
+
+We have also modified the abstract and introduction following the comments to better emphasize that this is a case of unrecognized polyphyly, with indepenent evolution of a second group of arboreal frogs that are morphologicaly indistinguishable (and non-sister taxa). We thank the reviewers for their very helpful suggestions.
+
+The only response that we did not accept was the final question on whether we couldnʻt make prelimiary assignments for more of the incertae sedis taxa based on call type and relative toe pad widths. This is not possible as call data are lacking for the majority of these taxa and we were not able to examine these specimens for ourselves.
 
 Thank you for the time invested on our manuscript, we are extrememly grateful!
 
